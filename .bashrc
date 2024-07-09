@@ -139,6 +139,7 @@ alias jax_env='source ~/.venv/jax_env/bin/activate'
 
 export PATH="$PATH:/home/pradhan/.local/bin"
 export PATH="$PATH:/home/pradhan/.venv/formatter/bin"
+export PATH="$PATH:/home/pradhan/.venv/jax_env/bin"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
 . "$HOME/.cargo/env"
 
