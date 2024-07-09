@@ -176,17 +176,6 @@ require("lazy").setup({
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 	{ "rose-pine/neovim", lazy = false },
 
-	-- Nice UI
-	-- {
-	-- 	"folke/noice.nvim",
-	-- 	event = "VeryLazy",
-	-- 	opts = {},
-	-- 	dependencies = {
-	-- 		"MunifTanjim/nui.nvim",
-	-- 		"rcarriga/nvim-notify",
-	-- 	},
-	-- },
-
 	-- Linter and Formatter
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
 
@@ -195,18 +184,6 @@ require("lazy").setup({
 
 	-- Lua Line
 	{ "nvim-lualine/lualine.nvim", lazy = false },
-
-	-- Tab line
-	-- {
-	-- 	"romgrk/barbar.nvim",
-	-- 	dependencies = {
-	-- 		"lewis6991/gitsigns.nvim",
-	-- 		"nvim-tree/nvim-web-devicons",
-	-- 	},
-	-- 	init = function()
-	-- 		vim.g.barbar_auto_setup = true
-	-- 	end,
-	-- },
 
 	-- Tree-sitter context
 	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },
