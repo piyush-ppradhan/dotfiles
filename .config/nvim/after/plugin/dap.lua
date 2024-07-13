@@ -4,6 +4,13 @@ dapui.setup()
 
 -- "python" is defined by activating the environment before opening neovim
 require("dap-python").setup("python")
+table.insert(require("dap").configurations.python, {
+	type = "python",
+	request = "launch",
+	name = "Custom launch configuration",
+	program = "${file}",
+	args = { "export", "PYTHONPATH=." },
+})
 
 vim.keymap.set("n", "<F5>", function()
 	dapui.open()
