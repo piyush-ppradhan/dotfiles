@@ -2,18 +2,36 @@ local dap = require("dap")
 local dapui = require("dapui")
 dapui.setup()
 
--- "python" is defined by activating the environment before opening neovim
-require("dap-python").setup("python")
-table.insert(require("dap").configurations.python, {
-	type = "python",
-	request = "launch",
-	name = "Custom launch configuration",
-	program = "${file}",
-	args = { "export", "PYTHONPATH=." },
-})
+dap.adapters.python = {
+	type = "executable",
+	command = (os.getenv("VIRTUAL_ENV") or "/usr") .. "/bin/python",
+	args = { "-m", "debugpy.adapter" },
+}
+
+-- sudo luarocks install luaposix
+require("posix").setenv("PYTHONPATH", vim.loop.cwd())
+
+dap.configurations.python = {
+	{
+		type = "python",
+		request = "launch",
+		name = "Launch Configuration",
+		program = "${file}",
+		cwd = function()
+			vim.loop.cwd()
+		end,
+		pythonPath = function()
+			local env = os.getenv("VIRTUAL_ENV") .. "/bin/python"
+			if vim.fn.executable(env) == 1 then
+				return env
+			else
+				return "/usr/bin/python3"
+			end
+		end,
+	},
+}
 
 vim.keymap.set("n", "<F5>", function()
-	dapui.open()
 	dap.continue()
 end)
 vim.keymap.set("n", "<F10>", function()
@@ -40,6 +58,19 @@ end)
 vim.keymap.set("n", "<leader>dt", function()
 	dapui.toggle()
 end)
+
+dap.listeners.before.attach.dapui_config = function()
+	dapui.open()
+end
+dap.listeners.before.launch.dapui_config = function()
+	dapui.open()
+end
+dap.listeners.before.event_terminated.dapui_config = function()
+	dapui.close()
+end
+dap.listeners.before.event_exited.dapui_config = function()
+	dapui.close()
+end
 
 require("nvim-dap-virtual-text").setup()
 require("telescope").load_extension("dap")
