@@ -9,7 +9,11 @@ dap.adapters.python = {
 }
 
 -- sudo luarocks install luaposix
-require("posix").setenv("PYTHONPATH", vim.loop.cwd())
+if not vim.fn.has("macunix") then
+	require("posix").setenv("PYTHONPATH", vim.loop.cwd())
+else
+	require("os").execute("export PYTHONPATH=" .. vim.loop.cwd())
+end
 
 dap.configurations.python = {
 	{
