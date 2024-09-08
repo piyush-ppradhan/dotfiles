@@ -83,7 +83,7 @@ if [[ $SHELL == *"bash"* || $0 == "bash" ]]; then
 	}
 
 	export VIRTUAL_ENV_DISABLE_PROMPT=1
-	PS1='\[\033[38;5;106m\]\w$(git_branch)$(conda_env)\[\033[38;5;255m\] \$ '
+	export PS1='\[\033[38;5;106m\]\w$(git_branch)$(conda_env)\[\033[38;5;255m\] \$ '
 fi
 
 # If this is an xterm set the title to user@host:dir
