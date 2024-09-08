@@ -74,9 +74,9 @@ if [[ $SHELL == *"bash"* || $0 == "bash" ]]; then
 
 	conda_env() {
 	  if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
-		echo -e "\033[38;5;009m conda:($CONDA_DEFAULT_ENV)"
+		echo -e "\033[38;5;196m conda:($CONDA_DEFAULT_ENV)"
 	  elif [[ -n "$VIRTUAL_ENV" ]]; then
-		echo -e "\033[38;5;009m pyenv:($(basename "$VIRTUAL_ENV"))"
+		echo -e "\033[38;5;196m pyenv:($(basename "$VIRTUAL_ENV"))"
 	  else
 		echo -e ""
 	  fi
