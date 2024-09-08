@@ -174,7 +174,6 @@ require("lazy").setup({
 
 	{ "nvim-tree/nvim-web-devicons", lazy = false },
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
-	{ "ellisonleao/gruvbox.nvim", lazy = false },
 
 	-- Trouble
 	{
