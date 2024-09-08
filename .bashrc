@@ -63,6 +63,29 @@ else
 fi
 unset color_prompt force_color_prompt
 
+if [[ $SHELL == *"bash"* || $0 == "bash" ]]; then
+	git_branch() {
+	  # Check if we're inside a Git repository
+	  if git rev-parse --git-dir > /dev/null 2>&1; then
+		# Get the current branch name
+		echo -e "\033[38;5;214m git:($(git symbolic-ref --short HEAD 2>/dev/null || echo 'detached'))"
+	  fi
+	}
+
+	conda_env() {
+	  if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
+		echo -e "\033[38;5;009m conda:($CONDA_DEFAULT_ENV)"
+	  elif [[ -n "$VIRTUAL_ENV" ]]; then
+		echo -e "\033[38;5;009m pyenv:($(basename "$VIRTUAL_ENV"))"
+	  else
+		echo -e ""
+	  fi
+	}
+
+	export VIRTUAL_ENV_DISABLE_PROMPT=1
+	PS1='\[\033[38;5;106m\]\w$(git_branch)$(conda_env)\[\033[38;5;255m\] \$ '
+fi
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
