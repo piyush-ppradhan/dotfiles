@@ -29,16 +29,3 @@ vim.cmd("set path+=**")
 vim.cmd("set wildmenu")
 vim.cmd("let g:netrw_banner = 0")
 vim.cmd("let g:netrw_liststyle = 3")
-
--- vim.api.nvim_create_autocmd("CmdlineLeave", {
--- 	group = “someGroup”,
--- 	callback = function()
--- 		vim.fn.timer_start(1000, function()
--- 			print(" ")
--- 		end)
--- 	end
--- })
-
--- vim.cmd.colorscheme("retrobox")
-vim.cmd("hi Function gui=None")
-vim.cmd("hi BufferDefaultCurrent gui=None")

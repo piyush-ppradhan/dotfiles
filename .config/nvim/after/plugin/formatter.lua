@@ -33,17 +33,17 @@ require("conform").setup({
 		return { lsp_fallback = true }
 	end,
 
-	formatters = {
-		pyink = {
-			command = "~/.venv/formatter/bin/pyink",
-			args = {
-				"--stdin-filename",
-				"$FILENAME",
-				"--quiet",
-				"-",
-			},
-		},
-	},
+	-- formatters = {
+	-- 	pyink = {
+	-- 		command = "~/.venv/formatter/bin/pyink",
+	-- 		args = {
+	-- 			"--stdin-filename",
+	-- 			"$FILENAME",
+	-- 			"--quiet",
+	-- 			"-",
+	-- 		},
+	-- 	},
+	-- },
 })
 
 -- Define keybinding for formatting

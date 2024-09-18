@@ -37,7 +37,19 @@ require("lazy").setup({
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
-				ensure_installed = { "c", "lua", "cpp", "julia", "python", "vimdoc", "vim" },
+				ensure_installed = {
+					"c",
+					"lua",
+					"cpp",
+					"julia",
+					"python",
+					"vimdoc",
+					"query",
+					"vim",
+					"markdown",
+					"markdown_inline",
+					"luadoc",
+				},
 				sync_install = false,
 				auto_install = true,
 				highlight = {
@@ -174,6 +186,26 @@ require("lazy").setup({
 
 	{ "nvim-tree/nvim-web-devicons", lazy = false },
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
+	{ "rose-pine/neovim", lazy = false },
+	{ "folke/tokyonight.nvim", lazy = false },
+	{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, lazy = false },
+	{ "stevearc/oil.nvim", dependencies = { { "echasnovski/mini.icons", opts = {} } } },
+
+	-- LLM
+	-- { "huggingface/llm.nvim", lazy = false},
+
+	-- -- Tab Bar
+	-- {
+	-- 	"romgrk/barbar.nvim",
+	-- 	dependencies = {
+	-- 		"lewis6991/gitsigns.nvim",
+	-- 		"nvim-tree/nvim-web-devicons",
+	-- 	},
+	-- 	init = function()
+	-- 		vim.g.barbar_auto_setup = false
+	-- 	end,
+	-- 	opts = {},
+	-- },
 
 	-- Trouble
 	{
