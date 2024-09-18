@@ -1,6 +1,6 @@
 [font]
-normal = {family = "RobotoMono Nerd Font", style = "Regular"}
-size = 11
+normal = {family = "CaskaydiaMono Nerd Font", style = "Regular"}
+size = 15
 
 [env]
 TERM = "xterm-256color"
