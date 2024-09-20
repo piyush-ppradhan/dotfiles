@@ -1,17 +1,24 @@
 require("lazy").setup({
+	-- Telescope
 	{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }, lazy = false },
-
 	{
 		"nvim-telescope/telescope-fzf-native.nvim",
 		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 		lazy = false,
 	},
+	{ "nvim-tree/nvim-web-devicons", lazy = false },
 
+	-- Bracket pairing and commenting
 	{ "windwp/nvim-autopairs", lazy = false, event = "InsertEnter", config = true },
 	{ "numToStr/Comment.nvim", lazy = false },
 
+	-- Better syntax highlight using treesitter
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", lazy = false },
 
+	-- Autocompletion
+	{ "hrsh7th/nvim-cmp", event = "InsertEnter", dependencies = { { "L3MON4D3/LuaSnip" } } },
+
+	-- LSP
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",
@@ -26,10 +33,6 @@ require("lazy").setup({
 
 	{ "williamboman/mason.nvim", lazy = false, config = true },
 
-	-- Autocompletion
-	{ "hrsh7th/nvim-cmp", event = "InsertEnter", dependencies = { { "L3MON4D3/LuaSnip" } } },
-
-	-- LSP
 	{
 		"neovim/nvim-lspconfig",
 		cmd = { "LspInfo", "LspInstall", "LspStart" },
@@ -40,9 +43,12 @@ require("lazy").setup({
 		},
 	},
 
-	{ "nvim-tree/nvim-web-devicons", lazy = false },
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
+
+	-- Support for better TODO comments
 	{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, lazy = false },
+
+	-- Better file explorer
 	{ "stevearc/oil.nvim", dependencies = { { "echasnovski/mini.icons", opts = {} } } },
 
 	-- Linter and Formatter
