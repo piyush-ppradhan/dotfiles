@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local config = {}
-config.font_size = 11.0
+config.font = wezterm.font("MesloLGL Nerd Font")
+config.font_size = 14.5
 config.hide_tab_bar_if_only_one_tab = true
 config.show_tab_index_in_tab_bar = false
 config.mouse_bindings = {
@@ -11,9 +12,9 @@ config.mouse_bindings = {
 		action = wezterm.action.OpenLinkAtMouseCursor,
 	},
 }
-config.window_frame = {
-	inactive_titlebar_bg = "#353535",
-	active_titlebar_bg = "#000000",
-	button_bg = "#000000",
-}
+-- config.window_frame = {
+-- 	inactive_titlebar_bg = "#353535",
+-- 	active_titlebar_bg = "#000000",
+-- 	button_bg = "#000000",
+-- }
 return config

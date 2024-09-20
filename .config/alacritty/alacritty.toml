@@ -1,9 +1,9 @@
 [font]
-normal = {family = "CaskaydiaMono Nerd Font", style = "Regular"}
+normal = {family = "RobotoMono Nerd Font", style = "Regular"}
 size = 15
 
 [env]
 TERM = "xterm-256color"
 
 [colors.primary]
-background = "#101010"
+background = "#151515"
