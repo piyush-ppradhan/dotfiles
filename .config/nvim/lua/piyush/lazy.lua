@@ -43,6 +43,10 @@ require("lazy").setup({
 		},
 	},
 
+	-- Colorscheme
+	{ "chriskempson/base16-vim", lazy = false },
+
+	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 
 	-- Support for better TODO comments
