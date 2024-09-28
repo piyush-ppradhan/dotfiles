@@ -16,7 +16,15 @@ require("lazy").setup({
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", lazy = false },
 
 	-- Autocompletion
-	{ "hrsh7th/nvim-cmp", event = "InsertEnter", dependencies = { { "L3MON4D3/LuaSnip" } } },
+	{
+		"hrsh7th/nvim-cmp",
+		event = "InsertEnter",
+		dependencies = {
+			{ "L3MON4D3/LuaSnip" },
+			{ "hrsh7th/cmp-path" },
+			{ "hrsh7th/cmp-buffer" },
+		},
+	},
 
 	-- LSP
 	{
@@ -44,7 +52,10 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "chriskempson/base16-vim", lazy = false },
+	{ "folke/tokyonight.nvim", lazy = false },
+
+	-- Lualine
+	{ "nvim-lualine/lualine.nvim", lazy = false },
 
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
