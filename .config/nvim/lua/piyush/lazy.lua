@@ -51,6 +51,9 @@ require("lazy").setup({
 		},
 	},
 
+	-- Colorscheme
+	{ "folke/tokyonight.nvim", lazy = false },
+
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 

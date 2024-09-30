@@ -182,4 +182,3 @@ esac
 # <<< juliaup initialize <<<
 
 alias small-text='gsettings set org.gnome.desktop.interface text-scaling-factor 1.0'
-alias vim='nvim'
