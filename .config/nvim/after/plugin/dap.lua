@@ -8,12 +8,50 @@ dap.adapters.python = {
 	args = { "-m", "debugpy.adapter" },
 }
 
+dap.adapters.lldb = {
+	type = "executable",
+	command = "/usr/bin/lldb-dap-18",
+	name = "lldb",
+}
+
 -- sudo luarocks install luaposix
 if not vim.fn.has("macunix") then
 	require("posix").setenv("PYTHONPATH", vim.loop.cwd())
 else
 	require("os").execute("export PYTHONPATH=" .. vim.loop.cwd())
 end
+
+dap.configurations.c = {
+	{
+		name = "Launch",
+		type = "lldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.loop.cwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+		args = {},
+		runInTerminal = false,
+	},
+}
+
+dap.configurations.cpp = dap.configurations.c
+
+-- dap.configurations.cpp = {
+-- 	{
+-- 		name = "Launch C++",
+-- 		type = "lldb",
+-- 		request = "launch",
+-- 		program = function()
+-- 			return vim.fn.input("Path to executable: ", vim.loop.cwd() .. "/", "file")
+-- 		end,
+-- 		cwd = "${workspaceFolder}",
+-- 		stopOnEntry = false,
+-- 		args = {},
+-- 		runInTerminal = false,
+-- 	},
+-- }
 
 dap.configurations.python = {
 	{
