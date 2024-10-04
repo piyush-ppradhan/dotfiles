@@ -142,6 +142,10 @@ export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
 . "$HOME/.cargo/env"
 
+export PETSC_DIR="/home/pradhan/Tools/petsc"
+export PETSC_ARCH="arch-linux-c-debug"
+export PYTHONPATH="$PYTHONPATH:/home/pradhan/Tools/petsc/arch-linux-c-debug/lib"
+
 
 # >>> juliaup initialize >>>
 
@@ -159,3 +163,4 @@ esac
 # <<< juliaup initialize <<<
 
 alias small-text='gsettings set org.gnome.desktop.interface text-scaling-factor 1.0'
+alias vim=nvim
