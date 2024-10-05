@@ -59,13 +59,9 @@ alias c="/opt/homebrew/bin/code"
 alias paraview="/opt/homebrew/bin/paraview"
 alias pytest="pytest -v"
 alias vim="nvim"
-alias zed="zed-preview"
-alias ghc="ghc-9.10"
-alias ytm="yt-dlp --extract-audio --embed-thumbnail --audio-format mp3 --verbose"
 
 export PATH="$PATH:/Users/pradhan/.venv/formatter/bin"
 export PATH="$PATH:/Users/pradhan/.local/bin"
-export PATH="$PATH:/Users/pradhan/.ghcup/bin"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 
