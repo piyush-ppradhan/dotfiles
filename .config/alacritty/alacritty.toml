@@ -1,0 +1,7 @@
+import = [
+	"~/.config/alacritty/themes/themes/tokyonight.toml"
+]
+
+[font]
+	normal = {family = "RobotoMono Nerd Font"}
+	size = 16

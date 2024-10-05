@@ -4,6 +4,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # !! Contents within this block are managed by juliaup !!
 path=('/Users/pradhan/.juliaup/bin' $path)
 export PATH
+export PATH="$PATH:/opt/homebrew/bin"
 # <<< juliaup initialize <<<
 
 function conda_init () {
