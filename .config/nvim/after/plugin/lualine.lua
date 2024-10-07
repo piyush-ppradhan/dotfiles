@@ -86,7 +86,7 @@ ins_left({
 		return mode_text[vim.fn.mode()]
 	end,
 	color = function()
-		return { fg = colors.yellow, gui = "bold" }
+		return { fg = "#05d2cf", gui = "bold" }
 	end,
 	padding = { left = 1, right = 1 },
 })
