@@ -77,37 +77,16 @@ ins_left({
 	-- mode component
 	function()
 		local mode_text = {
-			n = "Normal",
+			c = "Command",
 			i = "Insert",
+			n = "Normal",
+			r = "Replace",
 			v = "Visual",
 		}
 		return mode_text[vim.fn.mode()]
 	end,
 	color = function()
-		-- auto change color according to neovims mode
-		local mode_color = {
-			n = colors.red,
-			i = colors.green,
-			v = colors.blue,
-			[""] = colors.blue,
-			V = colors.blue,
-			c = colors.magenta,
-			no = colors.red,
-			s = colors.orange,
-			S = colors.orange,
-			[""] = colors.orange,
-			ic = colors.yellow,
-			R = colors.violet,
-			Rv = colors.violet,
-			cv = colors.red,
-			ce = colors.red,
-			r = colors.cyan,
-			rm = colors.cyan,
-			["r?"] = colors.cyan,
-			["!"] = colors.red,
-			t = colors.red,
-		}
-		return { fg = mode_color[vim.fn.mode()], gui = "bold" }
+		return { fg = colors.yellow, gui = "bold" }
 	end,
 	padding = { left = 1, right = 1 },
 })
@@ -153,45 +132,6 @@ ins_left({
 	function()
 		return "%="
 	end,
-})
-
-ins_left({
-	-- Lsp server name .
-	function()
-		local msg = "No Active Lsp"
-		local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
-		local clients = vim.lsp.get_clients()
-		if next(clients) == nil then
-			return msg
-		end
-		for _, client in ipairs(clients) do
-			local filetypes = client.config.filetypes
-			if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-				return client.name
-			end
-		end
-		return msg
-	end,
-	icon = " LSP:",
-	color = { fg = "#ffffff", gui = "bold" },
-})
-
-ins_right({ "location" })
-
-ins_right({ "progress", color = { fg = colors.fg, gui = "bold" } })
-
-ins_right({
-	"o:encoding", -- option component same as &encoding in viml
-	fmt = string.upper, -- I'm not sure why it's upper case either ;)
-	cond = conditions.hide_in_width,
-	color = { fg = colors.green, gui = "bold" },
-})
-
-ins_right({
-	"fileformat",
-	fmt = string.upper,
-	icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-	color = { fg = colors.green, gui = "bold" },
 })
 
 lualine.setup(config)
