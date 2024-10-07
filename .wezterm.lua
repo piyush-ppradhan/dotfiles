@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = {}
 config.color_scheme = "Tokyo Night"
--- config.font = wezterm.font("MesloLGL Nerd Font")
+config.font = wezterm.font("RobotoMono Nerd Font")
 config.font_size = 12
 config.hide_tab_bar_if_only_one_tab = true
 config.show_tab_index_in_tab_bar = false
