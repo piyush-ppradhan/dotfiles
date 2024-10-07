@@ -4,4 +4,7 @@ import = [
 
 [font]
 	normal = {family = "RobotoMono Nerd Font"}
-	size = 16
+	size = 11.5
+
+[env]
+term = "xterm-256color"

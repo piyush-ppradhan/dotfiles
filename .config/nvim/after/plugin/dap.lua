@@ -57,7 +57,7 @@ dap.configurations.python = {
 	{
 		type = "python",
 		request = "launch",
-		name = "Launch Configuration",
+		name = "Debug python file",
 		program = "${file}",
 		cwd = function()
 			vim.loop.cwd()
