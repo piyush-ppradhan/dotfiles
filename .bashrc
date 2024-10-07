@@ -133,6 +133,7 @@ function conda_init () {
 
 alias fenics_env='conda_init && conda activate ~/.venv/fenics_env'
 alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
+alias llama='conda_init && conda activate ~/.venv/llama'
 alias jax_env='source ~/.venv/jax_env/bin/activate'
 
 export PATH="$PATH:/home/pradhan/.local/bin"
@@ -164,3 +165,15 @@ esac
 
 alias small-text='gsettings set org.gnome.desktop.interface text-scaling-factor 1.0'
 alias vim=nvim
+if command -v batcat &> /dev/null; then
+	alias cat="batcat --theme=TwoDark"
+fi
+if command -v eza &> /dev/null; then
+	alias ls=eza
+fi
+
+# eval "$(starship init bash)"
+if command -v starship &> /dev/null; then
+    eval "$(starship init bash)"
+fi
+export STARSHIP_CONFIG="$HOME/.config/starship.toml"
