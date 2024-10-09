@@ -43,6 +43,10 @@ require("lazy").setup({
 			cmp_mappings["<S-Tab>"] = nil
 
 			cmp.setup({
+				sources = {
+					{ name = "path" },
+					{ name = "buffer" },
+				},
 				mapping = cmp.mappings,
 			})
 		end,
@@ -134,6 +138,16 @@ require("lazy").setup({
 				},
 			})
 		end,
+	},
+
+	-- Inline markdown/latex viewer
+	{
+		"OXY2DEV/markview.nvim",
+		lazy = false,
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-tree/nvim-web-devicons",
+		},
 	},
 
 	-- Colorscheme
