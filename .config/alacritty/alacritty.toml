@@ -3,8 +3,8 @@ import = [
 ]
 
 [font]
-	normal = {family = "RobotoMono Nerd Font"}
-	size = 11.5
+	normal = {family = "JetbrainsMono NF"}
+	size = 11.0
 
 [env]
 term = "xterm-256color"
