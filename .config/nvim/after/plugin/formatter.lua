@@ -4,6 +4,7 @@ require("conform").setup({
 		python = { "isort", "pyink" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
+		rust = { "rustfmt" },
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes
