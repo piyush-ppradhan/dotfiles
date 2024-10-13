@@ -43,10 +43,10 @@ require("lazy").setup({
 			cmp_mappings["<S-Tab>"] = nil
 
 			cmp.setup({
-				sources = {
-					{ name = "path" },
-					{ name = "buffer" },
-				},
+				-- sources = {
+				-- 	{ name = "path" },
+				-- 	{ name = "buffer" },
+				-- },
 				mapping = cmp.mappings,
 			})
 		end,
@@ -151,7 +151,7 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "folke/tokyonight.nvim", lazy = false },
+	{ "blazkowolf/gruber-darker.nvim", lazy = false },
 
 	-- Lualine
 	{ "nvim-lualine/lualine.nvim", lazy = false },
@@ -180,7 +180,7 @@ require("lazy").setup({
 	-- Debugger setup
 	{ "mfussenegger/nvim-dap" },
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
-	{ "theHamsta/nvim-dap-virtual-text" },
+	-- { "theHamsta/nvim-dap-virtual-text" },
 	{ "nvim-telescope/telescope-dap.nvim" },
 
 	defaults = {

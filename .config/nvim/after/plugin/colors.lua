@@ -1,9 +1,3 @@
-require("tokyonight").setup({
-	style = "night",
-	transparent = true,
-	on_colors = function(colors)
-		colors.border = "#b5b4b3"
-	end,
-})
+vim.cmd.colorscheme("gruber-darker")
 
-vim.cmd.colorscheme("tokyonight")
+vim.api.nvim_set_hl(0, "Normal", { fg = "None" })

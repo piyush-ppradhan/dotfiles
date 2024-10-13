@@ -86,7 +86,7 @@ ins_left({
 		return mode_text[vim.fn.mode()]
 	end,
 	color = function()
-		return { fg = "#05d2cf", gui = "bold" }
+		return { fg = "#fedb32", gui = "bold" }
 	end,
 	padding = { left = 1, right = 1 },
 })
@@ -94,7 +94,7 @@ ins_left({
 ins_left({
 	"branch",
 	icon = "",
-	color = { fg = colors.violet, gui = "bold" },
+	color = { fg = "#ede4df", gui = "bold" },
 })
 
 ins_left({
@@ -112,7 +112,7 @@ ins_left({
 ins_left({
 	"filename",
 	cond = conditions.buffer_not_empty,
-	color = { fg = colors.magenta, gui = "bold" },
+	color = { fg = "#3ca935", gui = "bold" },
 })
 
 ins_left({

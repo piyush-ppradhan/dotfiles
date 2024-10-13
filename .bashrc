@@ -139,6 +139,7 @@ alias jax_env='source ~/.venv/jax_env/bin/activate'
 export PATH="$PATH:/home/pradhan/.local/bin"
 export PATH="$PATH:/home/pradhan/.venv/formatter/bin"
 export PATH="$PATH:/home/pradhan/.venv/jax_env/bin"
+export PATH="$PATH:/home/pradhan/Tools/zig"
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
 . "$HOME/.cargo/env"
@@ -172,8 +173,8 @@ if command -v eza &> /dev/null; then
 	alias ls=eza
 fi
 
-# eval "$(starship init bash)"
+
+export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 if command -v starship &> /dev/null; then
     eval "$(starship init bash)"
 fi
-export STARSHIP_CONFIG="$HOME/.config/starship.toml"
