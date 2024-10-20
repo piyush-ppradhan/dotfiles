@@ -1,0 +1,65 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {
+            "1729466264428": "__default__profile__"
+        }
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "fee1c6a55628a8864b702e32d2386499ff43e23675e66932c8f5fdca1be6d461",
+    "telemetry.devDeviceId": "ec5f4de4-a961-403c-9674-4d95bcc266f6",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1729466264428"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/pradhan/.config/Code/Backups/1729466264428",
+            "uiState": {
+                "mode": 0,
+                "x": 960,
+                "y": 32,
+                "width": 960,
+                "height": 1048
+            }
+        },
+        "openedWindows": []
+    }
+}
