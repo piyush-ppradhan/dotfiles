@@ -151,10 +151,7 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "blazkowolf/gruber-darker.nvim", lazy = false },
-
-	-- Lualine
-	{ "nvim-lualine/lualine.nvim", lazy = false },
+	{ "rose-pine/neovim", lazy = false },
 
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
@@ -169,7 +166,8 @@ require("lazy").setup({
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
 
 	-- Git integration
-	-- { "tpope/vim-fugitive", lazy = false },
+	{ "tpope/vim-fugitive", lazy = false },
+	{ "sindrets/diffview.nvim", lazy = false },
 
 	-- Tree-sitter context
 	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },
@@ -180,7 +178,6 @@ require("lazy").setup({
 	-- Debugger setup
 	{ "mfussenegger/nvim-dap" },
 	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
-	-- { "theHamsta/nvim-dap-virtual-text" },
 	{ "nvim-telescope/telescope-dap.nvim" },
 
 	defaults = {
