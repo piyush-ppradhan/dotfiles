@@ -34,7 +34,6 @@ export PATH="$PATH:/home/pradhan/.local/bin"
 export PATH="$PATH:/home/pradhan/.venv/formatter/bin"
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
- # . "$HOME/.cargo/env"
 
 export PETSC_DIR="/home/pradhan/Tools/petsc"
 export PETSC_ARCH="arch-linux-c-debug"
