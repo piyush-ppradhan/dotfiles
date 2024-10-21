@@ -30,14 +30,8 @@ alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
 alias jax_env='source ~/.venv/jax_env/bin/activate.fish'
 alias formatter='source ~/.venv/formatter/bin/activate.fish'
 
-export PATH="$PATH:/home/pradhan/.local/bin"
-export PATH="$PATH:/home/pradhan/.venv/formatter/bin"
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
-
-export PETSC_DIR="/home/pradhan/Tools/petsc"
-export PETSC_ARCH="arch-linux-c-debug"
-export PYTHONPATH="$PYTHONPATH:/home/pradhan/Tools/petsc/arch-linux-c-debug/lib"
 
 alias small-text='gsettings set org.gnome.desktop.interface text-scaling-factor 1.0'
 alias vim=nvim

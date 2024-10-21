@@ -19,7 +19,7 @@
             }
         ]
     },
-    "windowControlHeight": 35,
+    "windowControlHeight": 30,
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
     "windowSplash": {
@@ -42,7 +42,7 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 35,
+            "titleBarHeight": 30,
             "activityBarWidth": 48,
             "sideBarWidth": 0,
             "statusBarHeight": 22,

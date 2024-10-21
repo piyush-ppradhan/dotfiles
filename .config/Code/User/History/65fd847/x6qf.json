@@ -24,8 +24,6 @@
     "julia.symbolCacheDownload": true,
     "git.openRepositoryInParentFolders": "never",
 	"vim.mouseSelectionGoesIntoVisualMode": true,
-    "workbench.layoutControl.enabled": false,
-    "window.commandCenter": false,
 
 //	"black-formatter.path": [
 //		"/Users/pradhan/.venv/formatter/bin/pyink"
