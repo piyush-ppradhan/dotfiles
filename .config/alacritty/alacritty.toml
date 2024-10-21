@@ -2,6 +2,9 @@ import = [
 	"~/.config/alacritty/themes/rosepine.toml"
 ]
 
+[keyboard]
+bindings=[{ key = "c", mods = "Control", command = { program = "sh", args = ["-c", "kill -s SIGTERM $(pgrep -n -P $(ps -o ppid= -p $(ps -o sid= -p $$))"] } }]
+
 [font]
 normal = {family = 'JetBrainsMono NF'}
 size = 12.0
