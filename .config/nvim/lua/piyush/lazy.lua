@@ -152,6 +152,7 @@ require("lazy").setup({
 
 	-- Colorscheme
 	{ "rose-pine/neovim", lazy = false },
+	{ "folke/tokyonight.nvim", lazy = false },
 
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },

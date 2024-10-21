@@ -10,11 +10,10 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.updatetime = 50
 vim.opt.autoread = true
+vim.opt.shortmess:append("I")
 
-vim.cmd("set clipboard=unnamedplus")
+vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-
--- vim.o.statusline = "%f%m%r%h%w[%{mode()}] [%l,%c] %P"
