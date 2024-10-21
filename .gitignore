@@ -1,0 +1,5 @@
+.config/Code/Cache*
+.config/Code/User*
+.config/Code/Session*
+.config/Code/logs*
+.config/Code/code*
