@@ -1,1 +1,10 @@
-import = [ "~/.config/alacritty/theme.toml", "~/.config/alacritty/font.toml", "~/.config/alacritty/font-size.toml", "~/.local/share/omakub/defaults/alacritty.toml" ]
+import = [
+	"~/.config/alacritty/themes/rosepine.toml"
+]
+
+[font]
+normal = {family = 'JetBrainsMono NF'}
+size = 12.0
+
+[colors.primary]
+background="#101010"
