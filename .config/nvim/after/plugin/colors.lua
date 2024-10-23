@@ -15,10 +15,13 @@ require("tokyonight").setup({
 	},
 })
 
+require("gruber-darker").setup({
+	transparent = true,
+})
+
 vim.cmd.colorscheme("rose-pine")
 vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("gruber-darker")
 
--- vim.api.nvim_set_hl(0, "Normal", { bg = "#101010" })
--- vim.api.nvim_set_hl(0, "LineNr", { fg = "#5a5a5a", bg = "None" })
--- vim.api.nvim_set_hl(0, "StatusLine", { bg = "None" })
--- vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "None" })
+vim.api.nvim_set_hl(0, "Number", { fg = "#7ba27f" })
+vim.api.nvim_set_hl(0, "Float", { fg = "#7ba27f" })

@@ -7,7 +7,7 @@ bindings=[{ key = "c", mods = "Control", command = { program = "sh", args = ["-c
 
 [font]
 normal = {family = 'JetBrainsMono NF'}
-size = 12.0
+size = 11.0
 
 [colors.primary]
-background="#000000"
+background="#141414"
