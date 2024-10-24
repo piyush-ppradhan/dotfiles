@@ -151,20 +151,7 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "rose-pine/neovim", lazy = false },
-	{ "folke/tokyonight.nvim", lazy = false },
-	{ "thimc/gruber-darker.nvim", lazy = false },
-
-	-- Compilation Mode
-	{
-		"ej-shafran/compile-mode.nvim",
-		dependencies = { "nvim-lua/plenary.nvim", "m00qek/baleia.nvim" },
-		config = function()
-			vim.g.compile_mode = {
-				baleia_setup = true,
-			}
-		end,
-	},
+	{ "tjdevries/colorbuddy.nvim", lazy = false },
 
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },

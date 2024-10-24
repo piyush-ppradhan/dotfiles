@@ -1,27 +1,7 @@
-require("rose-pine").setup({
-	variant = "main",
-	styles = {
-		italic = false,
-		bold = true,
-		transparency = true,
-	},
-})
+vim.cmd.colorscheme("gruvbuddy")
 
-require("tokyonight").setup({
-	style = "night",
-	transparent = true,
-	styles = {
-		keywords = { italic = false },
-	},
-})
-
-require("gruber-darker").setup({
-	transparent = true,
-})
-
-vim.cmd.colorscheme("rose-pine")
-vim.cmd.colorscheme("tokyonight")
-vim.cmd.colorscheme("gruber-darker")
-
-vim.api.nvim_set_hl(0, "Number", { fg = "#7ba27f" })
-vim.api.nvim_set_hl(0, "Float", { fg = "#7ba27f" })
+vim.api.nvim_set_hl(0, "StatusLine", { bg = "None" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "None" })
+local hl = vim.api.nvim_get_hl_by_name("Function", true)
+vim.api.nvim_set_hl(0, "Function", { fg = hl.foreground, bold = true })
+vim.api.nvim_set_hl(0, "@function", { fg = hl.foreground, bold = true })
