@@ -10,7 +10,7 @@ require("lazy").setup({
 
 	-- Bracket pairing and commenting
 	{ "windwp/nvim-autopairs", lazy = false, event = "InsertEnter", config = true },
-	{ "numToStr/Comment.nvim", lazy = false },
+	{ "numToStr/Comment.nvim", lazy = false, config = true },
 
 	-- Better syntax highlight using treesitter
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", lazy = false },
@@ -163,14 +163,31 @@ require("lazy").setup({
 	{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, lazy = false },
 
 	-- Better file explorer
-	{ "stevearc/oil.nvim", dependencies = { { "echasnovski/mini.icons", opts = {} } } },
+	{ "stevearc/oil.nvim", dependencies = { { "echasnovski/mini.icons", opts = {} } }, config = true },
+
+	-- Org mode
+	{
+		"nvim-neorg/neorg",
+		lazy = false,
+		version = "*",
+		config = true,
+	},
 
 	-- Linter and Formatter
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
 
 	-- Git integration
 	{ "tpope/vim-fugitive", lazy = false },
-	{ "sindrets/diffview.nvim", lazy = false },
+
+	{
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		config = true,
+	},
 
 	-- Tree-sitter context
 	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },

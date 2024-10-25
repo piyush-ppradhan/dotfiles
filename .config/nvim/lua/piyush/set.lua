@@ -11,9 +11,10 @@ vim.opt.undofile = true
 vim.opt.updatetime = 50
 vim.opt.autoread = true
 vim.opt.shortmess:append("I")
-vim.opt.list = true
-vim.opt.listchars:append("eol:↵")
-vim.opt.listchars:append("tab:  ")
+vim.opt.cursorline = true
+-- vim.opt.list = true
+-- vim.opt.listchars:append("eol:↵")
+-- vim.opt.listchars:append("tab:  ")
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
