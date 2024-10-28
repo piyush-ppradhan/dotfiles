@@ -1,5 +1,4 @@
 vim.cmd.colorscheme("gruvbuddy")
-
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "None" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "None" })
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#2f2f2f" })

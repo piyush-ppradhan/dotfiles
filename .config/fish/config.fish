@@ -1,6 +1,7 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pradhan/.local/bin"
 export PATH="$PATH:/home/pradhan/.venv/formatter/bin:/home/pradhan/.venv/jax_env/bin"
 export PATH="$PATH:/home/pradhan/.juliaup/bin:/home/pradhan/.cargo/bin:/home/pradhan/.local/share/bob/nvim-bin"
+export PATH="$PATH:/home/pradhan/Tools/Odin"
 
 
 # some more ls aliases
@@ -49,3 +50,5 @@ if type -q starship
     starship init fish | source
 end
 
+# opam configuration
+source /home/pradhan/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

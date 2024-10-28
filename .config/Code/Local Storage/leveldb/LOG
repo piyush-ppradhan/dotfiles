@@ -1,2 +1,3 @@
-2024/10/20-19:17:44.050 c69d5 Creating DB /home/pradhan/.config/Code/Local Storage/leveldb since it was missing.
-2024/10/20-19:17:44.059 c69d5 Reusing MANIFEST /home/pradhan/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2024/10/25-07:14:02.473 1dffe3 Reusing MANIFEST /home/pradhan/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2024/10/25-07:14:02.477 1dffe3 Recovering log #3
+2024/10/25-07:14:02.477 1dffe3 Reusing old log /home/pradhan/.config/Code/Local Storage/leveldb/000003.log 
