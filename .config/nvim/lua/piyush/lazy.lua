@@ -156,19 +156,8 @@ require("lazy").setup({
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 
-	-- Support for better TODO comments
-	{ "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, lazy = false },
-
 	-- Better file explorer
 	{ "stevearc/oil.nvim", dependencies = { { "echasnovski/mini.icons", opts = {} } }, config = true },
-
-	-- Org mode
-	{
-		"nvim-neorg/neorg",
-		lazy = false,
-		version = "*",
-		config = true,
-	},
 
 	-- Linter and Formatter
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
@@ -190,7 +179,7 @@ require("lazy").setup({
 	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },
 
 	-- Quick file navigation
-	-- { "ThePrimeagen/harpoon", dependencies = { "nvim-lua/plenary.nvim" } },
+	{ "ThePrimeagen/harpoon", dependencies = { "nvim-lua/plenary.nvim" } },
 
 	-- Debugger setup
 	{ "mfussenegger/nvim-dap" },

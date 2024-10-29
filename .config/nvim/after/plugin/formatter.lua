@@ -1,12 +1,12 @@
 require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
-		python = { "isort", "pyink" },
+		-- python = { "ruff" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		rust = { "rustfmt" },
 		fortran = { "fortls" },
-		zig = { "zls" },
+		ocaml = { "ocamlformat" },
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes
@@ -37,13 +37,11 @@ require("conform").setup({
 	end,
 
 	-- formatters = {
-	-- 	pyink = {
-	-- 		command = "~/.venv/formatter/bin/pyink",
+	-- 	ruff = {
+	-- 		command = "ruff",
 	-- 		args = {
-	-- 			"--stdin-filename",
+	-- 			"format",
 	-- 			"$FILENAME",
-	-- 			"--quiet",
-	-- 			"-",
 	-- 		},
 	-- 	},
 	-- },

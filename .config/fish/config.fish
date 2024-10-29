@@ -47,3 +47,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 if type -q starship
     starship init fish | source
 end
+
+# opam configuration
+source /home/pradhan/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
