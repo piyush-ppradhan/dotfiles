@@ -153,9 +153,6 @@ require("lazy").setup({
 	-- Colorscheme
 	{ "tjdevries/colorbuddy.nvim", lazy = false },
 
-	-- Lua line
-	{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }, lazy = false },
-
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 
