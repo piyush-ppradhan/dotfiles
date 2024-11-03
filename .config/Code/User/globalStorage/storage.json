@@ -1,10 +1,10 @@
 {
     "userDataProfilesMigration": true,
     "profileAssociations": {
-        "workspaces": {},
-        "emptyWindows": {
-            "1729466264428": "__default__profile__"
-        }
+        "workspaces": {
+            "file:///home/pradhan/Programs/python/gEOS-LB": "__default__profile__"
+        },
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -12,46 +12,46 @@
     "telemetry.devDeviceId": "ec5f4de4-a961-403c-9674-4d95bcc266f6",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1729466264428"
+                "folderUri": "file:///home/pradhan/Programs/python/gEOS-LB"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "windowControlHeight": 30,
     "theme": "vs-dark",
-    "themeBackground": "#1f1f1f",
+    "themeBackground": "#1d2021",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#cccccc",
-            "background": "#1f1f1f",
-            "editorBackground": "#1f1f1f",
-            "titleBarBackground": "#181818",
-            "titleBarBorder": "#2b2b2b",
-            "activityBarBackground": "#181818",
-            "activityBarBorder": "#2b2b2b",
-            "sideBarBackground": "#181818",
-            "sideBarBorder": "#2b2b2b",
-            "statusBarBackground": "#181818",
-            "statusBarBorder": "#2b2b2b",
-            "statusBarNoFolderBackground": "#1f1f1f"
+            "foreground": "#ebdbb2",
+            "background": "#1d2021",
+            "editorBackground": "#1d2021",
+            "titleBarBackground": "#1d2021",
+            "activityBarBackground": "#1d2021",
+            "activityBarBorder": "#3c3836",
+            "sideBarBackground": "#1d2021",
+            "sideBarBorder": "#3c3836",
+            "statusBarBackground": "#1d2021",
+            "statusBarBorder": "#3c3836",
+            "statusBarNoFolderBackground": "#1d2021"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 208,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/pradhan/.config/Code/Backups/1729466264428",
+            "folder": "file:///home/pradhan/Programs/python/gEOS-LB",
+            "backupPath": "/home/pradhan/.config/Code/Backups/57cb660ba47e68a6abdbb76ce8eee679",
             "uiState": {
                 "mode": 0,
                 "x": 960,

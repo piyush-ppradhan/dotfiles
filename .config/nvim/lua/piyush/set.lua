@@ -12,7 +12,7 @@ vim.opt.undofile = true
 vim.opt.updatetime = 50
 vim.opt.autoread = true
 vim.opt.shortmess:append("I")
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
 -- vim.opt.list = true
 -- vim.opt.listchars:append("eol:↵")
 -- vim.opt.listchars:append("tab:  ")

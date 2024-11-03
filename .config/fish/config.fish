@@ -1,5 +1,5 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pradhan/.local/bin"
-export PATH="$PATH:/home/pradhan/.venv/formatter/bin:/home/pradhan/.venv/jax_env/bin"
+export PATH="$PATH:/home/pradhan/.venv/jax_env/bin:/home/pradhan/.venv/formatter/bin:/home/pradhan/.venv/general/bin"
 export PATH="$PATH:/home/pradhan/.juliaup/bin:/home/pradhan/.cargo/bin:/home/pradhan/.local/share/bob/nvim-bin"
 
 # some more ls aliases
@@ -28,6 +28,7 @@ alias fenics_env='conda_init && conda activate ~/.venv/fenics_env'
 alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
 alias jax_env='source ~/.venv/jax_env/bin/activate.fish'
 alias formatter='source ~/.venv/formatter/bin/activate.fish'
+alias general='source ~/.venv/general/bin/activate.fish'
 
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
@@ -47,6 +48,3 @@ export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 if type -q starship
     starship init fish | source
 end
-
-# opam configuration
-source /home/pradhan/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

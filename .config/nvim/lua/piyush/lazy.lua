@@ -125,7 +125,7 @@ require("lazy").setup({
 			})
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "clangd", "pyright", "julials" },
+				ensure_installed = { "clangd", "pyright", "ruff", "julials" },
 				handlers = {
 					lsp_zero.default_setup,
 					lua_ls = function()
@@ -133,7 +133,7 @@ require("lazy").setup({
 						require("lspconfig").lua_ls.setup(lua_opts)
 					end,
 					julials = function()
-						require("lspconfig").julials.setup({ julia_env_path = "~/.julia/environments/v1.10" })
+						require("lspconfig").julials.setup({ julia_env_path = "~/.julia/environments/v1.11" })
 					end,
 				},
 			})
@@ -150,9 +150,6 @@ require("lazy").setup({
 		},
 	},
 
-	-- Colorscheme
-	{ "tjdevries/colorbuddy.nvim", lazy = false },
-
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },
 
@@ -162,24 +159,8 @@ require("lazy").setup({
 	-- Linter and Formatter
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
 
-	-- Git integration
-	{ "tpope/vim-fugitive", lazy = false },
-
-	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"sindrets/diffview.nvim",
-			"nvim-telescope/telescope.nvim",
-		},
-		config = true,
-	},
-
 	-- Tree-sitter context
 	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },
-
-	-- Quick file navigation
-	{ "ThePrimeagen/harpoon", dependencies = { "nvim-lua/plenary.nvim" } },
 
 	-- Debugger setup
 	{ "mfussenegger/nvim-dap" },

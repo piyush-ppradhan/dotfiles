@@ -6,11 +6,10 @@ require("conform").setup({
 		cpp = { "clang-format" },
 		rust = { "rustfmt" },
 		fortran = { "fortls" },
-		ocaml = { "ocamlformat" },
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes
-		local ignore_filetypes = { "sql", "java" }
+		local ignore_filetypes = {}
 		if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
 			return
 		end
@@ -32,19 +31,8 @@ require("conform").setup({
 		if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
 			return
 		end
-		-- ...additional logic...
-		return { lsp_fallback = true }
+		return { lsp_fallback = true } -- This handles the python formatting as ruff is lsp + formatter
 	end,
-
-	-- formatters = {
-	-- 	ruff = {
-	-- 		command = "ruff",
-	-- 		args = {
-	-- 			"format",
-	-- 			"$FILENAME",
-	-- 		},
-	-- 	},
-	-- },
 })
 
 -- Define keybinding for formatting
