@@ -137,6 +137,16 @@ require("lazy").setup({
 					end,
 				},
 			})
+
+			require("lspconfig").ruff.setup({
+				init_options = {
+					settings = {
+						lint = {
+							enable = false,
+						},
+					},
+				},
+			})
 		end,
 	},
 
@@ -149,6 +159,9 @@ require("lazy").setup({
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
+
+	-- Colorscheme
+	{ "folke/tokyonight.nvim" },
 
 	-- Julia support (for example Latex characters for variable names)
 	{ "JuliaEditorSupport/julia-vim", lazy = false },

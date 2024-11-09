@@ -2,7 +2,8 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/pradhan/Programs/python/gEOS-LB": "__default__profile__"
+            "file:///home/pradhan/Programs/python/gEOS-LB": "__default__profile__",
+            "file:///home/pradhan/Programs/C/dl_meso_2.7": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -14,44 +15,42 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/pradhan/Programs/python/gEOS-LB"
+                "folderUri": "file:///home/pradhan/Programs/C/dl_meso_2.7"
             }
         ],
         "emptyWindows": []
     },
     "windowControlHeight": 30,
     "theme": "vs-dark",
-    "themeBackground": "#1d2021",
+    "themeBackground": "#191724",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#ebdbb2",
-            "background": "#1d2021",
-            "editorBackground": "#1d2021",
-            "titleBarBackground": "#1d2021",
-            "activityBarBackground": "#1d2021",
-            "activityBarBorder": "#3c3836",
-            "sideBarBackground": "#1d2021",
-            "sideBarBorder": "#3c3836",
-            "statusBarBackground": "#1d2021",
-            "statusBarBorder": "#3c3836",
-            "statusBarNoFolderBackground": "#1d2021"
+            "foreground": "#e0def4",
+            "background": "#191724",
+            "editorBackground": "#191724",
+            "titleBarBackground": "#191724",
+            "activityBarBackground": "#191724",
+            "sideBarBackground": "#191724",
+            "statusBarBackground": "#191724",
+            "statusBarNoFolderBackground": "#191724",
+            "windowBorder": "#1f1d2e"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 208,
+            "sideBarWidth": 204,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/pradhan/Programs/python/gEOS-LB",
-            "backupPath": "/home/pradhan/.config/Code/Backups/57cb660ba47e68a6abdbb76ce8eee679",
+            "folder": "file:///home/pradhan/Programs/C/dl_meso_2.7",
+            "backupPath": "/home/pradhan/.config/Code/Backups/821d2e5026347dcf22ee1cc630351830",
             "uiState": {
                 "mode": 0,
                 "x": 960,

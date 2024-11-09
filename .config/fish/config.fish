@@ -32,6 +32,7 @@ alias general='source ~/.venv/general/bin/activate.fish'
 
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 alias of2312=". /usr/lib/openfoam/openfoam2312/etc/bashrc"
+alias of2406=". /usr/lib/openfoam/openfoam2406/etc/bashrc"
 
 alias small-text='gsettings set org.gnome.desktop.interface text-scaling-factor 1.0'
 alias vim=nvim
@@ -48,3 +49,5 @@ export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 if type -q starship
     starship init fish | source
 end
+
+export QT_QPA_PLATFORMTHEME=qt5ct

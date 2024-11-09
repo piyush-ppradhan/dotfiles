@@ -1,7 +1,11 @@
 {
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 15,
     "terminal.integrated.fontSize": 15,
+    "editor.stickyScroll.enabled":  false,
+    "breadcrumbs.enabled": false,
+    "editor.guides.indentation": false,
+    "editor.folding": false,
     "editor.minimap.autohide": true,
     "window.titleBarStyle": "custom",
     "security.workspace.trust.untrustedFiles": "open",
@@ -27,7 +31,7 @@
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Rosé Pine (no italics)",
 
 //	"black-formatter.path": [
 //		"/Users/pradhan/.venv/formatter/bin/pyink"

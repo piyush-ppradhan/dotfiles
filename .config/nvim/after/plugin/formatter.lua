@@ -6,6 +6,7 @@ require("conform").setup({
 		cpp = { "clang-format" },
 		rust = { "rustfmt" },
 		fortran = { "fortls" },
+		zig = { "zls" },
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes
