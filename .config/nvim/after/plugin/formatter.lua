@@ -6,7 +6,6 @@ require("conform").setup({
 		cpp = { "clang-format" },
 		rust = { "rustfmt" },
 		fortran = { "fortls" },
-		zig = { "zls" },
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes
@@ -32,7 +31,7 @@ require("conform").setup({
 		if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
 			return
 		end
-		return { lsp_fallback = true } -- This handles the python formatting as ruff is lsp + formatter
+		return { lsp_fallback = true } -- This handles the python formatting as ruff is formatter and linter only
 	end,
 })
 
