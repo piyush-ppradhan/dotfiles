@@ -1,13 +1,13 @@
 import = [
-	"~/.config/alacritty/themes/tokyonight.toml"
+	"~/.config/alacritty/themes/rosepine.toml"
 ]
 
 [keyboard]
 bindings=[{ key = "c", mods = "Control", command = { program = "sh", args = ["-c", "kill -s SIGTERM $(pgrep -n -P $(ps -o ppid= -p $(ps -o sid= -p $$))"] } }]
 
 [font]
-normal = {family = 'JetBrainsMono NF'}
-size = 11.0
+normal = {family = 'Consolas Nerd Font'}
+size = 12.5
 
 [colors.primary]
-background="#141414"
+background="#090909"

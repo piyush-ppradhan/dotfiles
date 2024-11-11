@@ -150,6 +150,9 @@ require("lazy").setup({
 		end,
 	},
 
+	-- Colorscheme
+	{ "rose-pine/neovim" },
+
 	-- Inline markdown/latex viewer
 	{
 		"OXY2DEV/markview.nvim",
