@@ -1,8 +1,4 @@
-require("rose-pine").setup({
-	variant = "main",
-	styles = {
-		transparency = true,
-		italic = false,
-	},
-})
-vim.cmd.colorscheme("rose-pine")
+vim.g.gruvbox_bold = 1
+vim.g.gruvbox_contrast_dark = "hard"
+vim.g.gruvbox_sign_column = "bg0"
+vim.cmd.colorscheme("gruvbox")
