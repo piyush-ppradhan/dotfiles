@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
     "editor.stickyScroll.enabled":  false,
     "breadcrumbs.enabled": false,
     "editor.guides.indentation": false,
@@ -31,7 +31,15 @@
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Rosé Pine (no italics)",
+    "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+    "workbench.colorCustomizations": {
+        "editor.background": "#101010",
+        "sideBar.background": "#101010",
+        "editorGutter.background": "#101010",
+        "activityBar.background": "#101010",
+        "statusBar.background": "#101010",
+        "titleBar.activeBackground": "#101010"
+    }
 
 //	"black-formatter.path": [
 //		"/Users/pradhan/.venv/formatter/bin/pyink"

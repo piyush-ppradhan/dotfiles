@@ -151,10 +151,8 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "morhetz/gruvbox" },
-
-	-- Lualine
-	{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
+	{ "ellisonleao/gruvbox.nvim" },
+	{ "rose-pine/neovim" },
 
 	-- Inline markdown/latex viewer
 	{

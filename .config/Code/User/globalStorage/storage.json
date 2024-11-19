@@ -3,7 +3,9 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/pradhan/Programs/python/gEOS-LB": "__default__profile__",
-            "file:///home/pradhan/Programs/C/dl_meso_2.7": "__default__profile__"
+            "file:///home/pradhan/Programs/C/dl_meso_2.7": "__default__profile__",
+            "file:///home/pradhan/Programs/python/JLBM": "__default__profile__",
+            "file:///home/pradhan/Programs/python/research_jlbm": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -15,27 +17,27 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/pradhan/Programs/C/dl_meso_2.7"
+                "folderUri": "file:///home/pradhan/Programs/python/research_jlbm"
             }
         ],
         "emptyWindows": []
     },
     "windowControlHeight": 30,
     "theme": "vs-dark",
-    "themeBackground": "#191724",
+    "themeBackground": "#101010",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#e0def4",
-            "background": "#191724",
-            "editorBackground": "#191724",
-            "titleBarBackground": "#191724",
-            "activityBarBackground": "#191724",
-            "sideBarBackground": "#191724",
-            "statusBarBackground": "#191724",
-            "statusBarNoFolderBackground": "#191724",
-            "windowBorder": "#1f1d2e"
+            "background": "#101010",
+            "editorBackground": "#101010",
+            "titleBarBackground": "#101010",
+            "activityBarBackground": "#101010",
+            "sideBarBackground": "#101010",
+            "statusBarBackground": "#101010",
+            "statusBarNoFolderBackground": "#232136",
+            "windowBorder": "#2a273f"
         },
         "layoutInfo": {
             "sideBarSide": "left",
@@ -49,8 +51,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/pradhan/Programs/C/dl_meso_2.7",
-            "backupPath": "/home/pradhan/.config/Code/Backups/821d2e5026347dcf22ee1cc630351830",
+            "folder": "file:///home/pradhan/Programs/python/research_jlbm",
+            "backupPath": "/home/pradhan/.config/Code/Backups/a782e5c84a204e68847e1407302dd803",
             "uiState": {
                 "mode": 0,
                 "x": 960,
