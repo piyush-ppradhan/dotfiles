@@ -1,13 +1,15 @@
-import = [
-	"~/.config/alacritty/themes/rosepine.toml"
-]
 
 [keyboard]
 bindings=[{ key = "c", mods = "Control", command = { program = "sh", args = ["-c", "kill -s SIGTERM $(pgrep -n -P $(ps -o ppid= -p $(ps -o sid= -p $$))"] } }]
 
 [font]
-normal = {family = 'Consolas Nerd Font'}
-size = 12.5
+normal = {family = 'RobotoMono Nerd Font'}
+size = 17.0
 
 [colors.primary]
 background="#090909"
+
+[general]
+import = [
+	"~/.config/alacritty/themes/rosepine.toml"
+]
