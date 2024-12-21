@@ -62,6 +62,7 @@ alias vim="nvim"
 
 export PATH="$PATH:/Users/pradhan/.venv/formatter/bin"
 export PATH="$PATH:/Users/pradhan/.local/bin"
+export PATH="$PATH:/Users/pradhan/.local/share/bob/nightly/bin"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 
