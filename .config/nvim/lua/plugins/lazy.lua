@@ -151,8 +151,22 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "ellisonleao/gruvbox.nvim" },
 	{ "rose-pine/neovim" },
+	{ "folke/tokyonight.nvim" },
+
+	-- QoL plugins
+	{
+		"folke/trouble.nvim",
+		opts = {},
+		cmd = "Trouble",
+		keys = {
+			{
+				"<Leader>xx",
+				"<cmd>Trouble diagnostics toggle<cr>",
+				desc = "Diagnostics (Trouble)",
+			},
+		},
+	},
 
 	-- Inline markdown/latex viewer
 	{
@@ -162,6 +176,17 @@ require("lazy").setup({
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
 		},
+	},
+
+	-- Git integration
+	{
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		config = true,
 	},
 
 	-- Julia support (for example Latex characters for variable names)
