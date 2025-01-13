@@ -1,7 +1,6 @@
 {
-    "editor.fontFamily": "JetBrainsMono NFM",
-    "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
     "editor.stickyScroll.enabled":  false,
     "breadcrumbs.enabled": false,
     "editor.guides.indentation": false,
@@ -9,12 +8,9 @@
     "editor.minimap.autohide": true,
     "editor.minimap.enabled": false,
     "window.titleBarStyle": "custom",
-    "workbench.activityBar.location": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "vim.useSystemClipboard": true,
     "telemetry.telemetryLevel": "off",
-    "MATLAB.telemetry": false,
-    "julia.enableTelemetry": false,
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-s>": false,
@@ -23,17 +19,13 @@
         "<C-t>": false,
         "<C-b>": false
     },
-    "terminal.integrated.commandsToSkipShell": [
-        "matlab.interrupt",
-        "language-julia.interrupt"
-    ],
-    "julia.symbolCacheDownload": true,
     "git.openRepositoryInParentFolders": "never",
 	"vim.mouseSelectionGoesIntoVisualMode": true,
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
     "workbench.startupEditor": "none",
     "window.menuBarVisibility": "compact",
+    "extensions.ignoreRecommendations": true,
 
 //	"black-formatter.path": [
 //		"/Users/pradhan/.venv/formatter/bin/pyink"
