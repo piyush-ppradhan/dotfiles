@@ -11,7 +11,7 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.updatetime = 50
 vim.opt.autoread = true
-vim.opt.shortmess:append("I")
+-- vim.opt.shortmess:append("I")
 -- vim.opt.cursorline = true
 -- vim.opt.list = true
 -- vim.opt.listchars:append("eol:↵")
