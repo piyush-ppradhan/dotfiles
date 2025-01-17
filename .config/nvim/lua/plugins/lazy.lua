@@ -162,6 +162,7 @@ require("lazy").setup({
 
 	-- Colorscheme
 	{ "rose-pine/neovim" },
+	{ "morhetz/gruvbox" },
 
 	-- Inline markdown/latex viewer
 	{
@@ -183,7 +184,7 @@ require("lazy").setup({
 	{ "stevearc/conform.nvim", lazy = false, event = { "BufReadPre", "BufNewFile" } },
 
 	-- Tree-sitter context
-	{ "nvim-treesitter/nvim-treesitter-context", lazy = false },
+	-- { "nvim-treesitter/nvim-treesitter-context", lazy = false },
 
 	-- Debugger setup
 	{ "mfussenegger/nvim-dap" },
