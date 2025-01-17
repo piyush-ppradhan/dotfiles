@@ -1,5 +1,5 @@
-theme = rose-pine-moon
-background = 050505
+theme = GruvboxDarkHard
+background = 151515
 font-size = 12
 font-feature = -calt
 shell-integration-features = sudo
