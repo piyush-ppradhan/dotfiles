@@ -1,5 +1,5 @@
-theme = GruvboxDarkHard
-background = 151515
+theme = Everforest Dark - Hard
+background = 101010
 font-size = 12
 font-feature = -calt
 shell-integration-features = sudo

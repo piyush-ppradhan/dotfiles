@@ -1,8 +1,10 @@
 {
+    "editor.fontFamily": "CaskaydiaCove NF",
     "editor.fontSize": 15,
     "terminal.integrated.fontSize": 15,
     "editor.stickyScroll.enabled":  false,
     "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
     "editor.guides.indentation": false,
     "editor.folding": false,
     "editor.minimap.autohide": true,
@@ -26,6 +28,7 @@
     "workbench.startupEditor": "none",
     "window.menuBarVisibility": "compact",
     "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Gruvbox Glass",
 
 //	"black-formatter.path": [
 //		"/Users/pradhan/.venv/formatter/bin/pyink"

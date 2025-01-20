@@ -161,8 +161,14 @@ require("lazy").setup({
 	},
 
 	-- Colorscheme
-	{ "rose-pine/neovim" },
 	{ "morhetz/gruvbox" },
+	{ "comfysage/evergarden" },
+
+	-- Lualine
+	{ "nvim-lualine/lualine.nvim" },
+
+	-- Copilot
+	{ "github/copilot.vim" },
 
 	-- Inline markdown/latex viewer
 	{
