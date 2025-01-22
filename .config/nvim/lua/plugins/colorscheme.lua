@@ -41,7 +41,7 @@ return {
 				terminal_colors = true,
 				styles = {
 					comments = { italic = true },
-					keywords = { bold = true },
+					keywords = { italic = false, bold = true },
 				},
 			})
 			vim.cmd.colorscheme("tokyonight")
