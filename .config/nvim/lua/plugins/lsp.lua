@@ -71,7 +71,7 @@ return {
 			})
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "clangd", "pyright", "ruff", "julials" },
+				ensure_installed = { "clangd", "ruff", "julials", "lua_ls", "pyright" },
 				handlers = {
 					lsp_zero.default_setup,
 					lua_ls = function()
@@ -86,19 +86,13 @@ return {
 
 			require("lspconfig").pyright.setup({
 				settings = {
+					pyright = {
+						disableOrganizeImports = true,
+					},
 					python = {
 						analysis = {
-							typeCheckingMode = "off",
-						},
-					},
-				},
-			})
-
-			require("lspconfig").ruff.setup({
-				init_options = {
-					settings = {
-						lint = {
-							enable = false,
+							--typeCheckingMode = "off",
+							ignore = { "*" },
 						},
 					},
 				},
