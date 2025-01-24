@@ -97,6 +97,16 @@ return {
 					},
 				},
 			})
+
+			require("lspconfig").ruff.setup({
+				init_options = {
+					settings = {
+						lint = {
+							ignore = { "E731" },
+						},
+					},
+				},
+			})
 		end,
 	},
 }
