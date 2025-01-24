@@ -1,5 +1,5 @@
-theme = rose-pine-moon
-background = 090909
-font-size = 11
+background = 101010
+font-family = SF Mono
+font-size = 16
 font-feature = -calt
 shell-integration-features = sudo
