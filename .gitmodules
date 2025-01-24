@@ -7,9 +7,6 @@
 [submodule "misc/.tmux/plugins/tpm"]
 	path = misc/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule ".config/alacritty/themes"]
-	path = .config/alacritty/themes
-	url = https://github.com/alacritty/alacritty-theme
 [submodule ".config/tmux/plugins/tmux-sensible"]
 	path = .config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
