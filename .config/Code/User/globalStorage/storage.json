@@ -12,7 +12,9 @@
             "file:///home/pradhan/dotfiles/.config/nvim": "__default__profile__",
             "file:///home/pradhan/Programs/python/coregen": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1737956236277": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -22,44 +24,50 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/pradhan/Programs/python/coregen"
+                "folderUri": "file:///home/pradhan/Programs/python/RTM-LBM"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1737956236277"
+            }
+        ]
     },
     "windowControlHeight": 30,
     "theme": "vs-dark",
-    "themeBackground": "#161819",
+    "themeBackground": "#11111b",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#ebdbb2",
-            "background": "#161819",
-            "editorBackground": "#161819",
-            "titleBarBackground": "#1d2021",
-            "activityBarBackground": "#1d2021",
-            "activityBarBorder": "rgba(60, 56, 54, 0)",
-            "sideBarBackground": "#1d2021",
-            "sideBarBorder": "rgba(54, 60, 54, 0)",
-            "statusBarBackground": "#1d2021",
-            "statusBarBorder": "rgba(60, 56, 54, 0)",
-            "statusBarNoFolderBackground": "#1d2021"
+            "foreground": "#cdd6f4",
+            "background": "#11111b",
+            "editorBackground": "#11111b",
+            "titleBarBackground": "#11111b",
+            "titleBarBorder": "rgba(0, 0, 0, 0)",
+            "activityBarBackground": "#11111b",
+            "activityBarBorder": "rgba(0, 0, 0, 0)",
+            "sideBarBackground": "#11111b",
+            "sideBarBorder": "rgba(0, 0, 0, 0)",
+            "statusBarBackground": "#11111b",
+            "statusBarBorder": "rgba(0, 0, 0, 0)",
+            "statusBarNoFolderBackground": "#11111b",
+            "windowBorder": "rgba(0, 0, 0, 0)"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/pradhan/Programs/python/coregen",
-            "backupPath": "/home/pradhan/.config/Code/Backups/934f9523976c29a9aaae8cf5e663d349",
+            "folder": "file:///home/pradhan/Programs/python/RTM-LBM",
+            "backupPath": "/home/pradhan/.config/Code/Backups/6dd4573ab070eea5aa5ae7a5d80070d7",
             "uiState": {
                 "mode": 0,
                 "x": 2340,
