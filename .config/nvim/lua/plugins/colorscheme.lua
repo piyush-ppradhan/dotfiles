@@ -1,16 +1,32 @@
 return {
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			variant = "moon",
+	-- 			dark_variant = "moon",
+	-- 			styles = {
+	-- 				italic = false,
+	-- 				transparency = true,
+	-- 			},
+	-- 		})
+	-- 		-- vim.cmd.colorscheme("rose-pine")
+	-- 	end,
+	-- },
 	{
-		"folke/tokyonight.nvim",
+		"ellisonleao/gruvbox.nvim",
 		config = function()
-			require("tokyonight").setup({
-				style = "night",
-				styles = {
-					comments = { italic = false },
-					keywords = { italic = false, bold = true },
+			require("gruvbox").setup({
+				italic = {
+					strings = false,
+					emphasis = false,
+					comments = false,
+					folds = false,
 				},
-				transparent = true,
+				contrast = "hard",
+				inverse = false,
 			})
-			vim.cmd.colorscheme("tokyonight")
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 }
