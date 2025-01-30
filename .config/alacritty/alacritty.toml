@@ -1,11 +1,10 @@
-[general]
 import = [
     "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
 ]
 
 [font]
 normal = {family = "RobotoMono Nerd Font"}
-size = 17.0
+size = 13.0
 
 [colors.primary]
 background = "#121212"
