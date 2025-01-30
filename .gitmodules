@@ -1,12 +1,3 @@
-[submodule "misc/.tmux/plugins/tmux-sensible"]
-	path = misc/.tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible
-[submodule "misc/.tmux/plugins/tmux-yank"]
-	path = misc/.tmux/plugins/tmux-yank
-	url = https://github.com/tmux-plugins/tmux-yank
-[submodule "misc/.tmux/plugins/tpm"]
-	path = misc/.tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
 [submodule ".config/tmux/plugins/tmux-sensible"]
 	path = .config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
