@@ -1,18 +1,4 @@
 return {
-	-- {
-	-- 	"rose-pine/neovim",
-	-- 	config = function()
-	-- 		require("rose-pine").setup({
-	-- 			variant = "moon",
-	-- 			dark_variant = "moon",
-	-- 			styles = {
-	-- 				italic = false,
-	-- 				transparency = true,
-	-- 			},
-	-- 		})
-	-- 		-- vim.cmd.colorscheme("rose-pine")
-	-- 	end,
-	-- },
 	{
 		"ellisonleao/gruvbox.nvim",
 		config = function()
@@ -25,8 +11,12 @@ return {
 				},
 				contrast = "hard",
 				inverse = false,
+				transparent_mode = true,
 			})
 			vim.cmd.colorscheme("gruvbox")
+			vim.api.nvim_set_hl(0, "IncSearch", { fg = "#121212", bg = "#f9bd2e" })
+			vim.api.nvim_set_hl(0, "StatusLine", { bg = "#202020" })
+			vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "#202020" })
 		end,
 	},
 }

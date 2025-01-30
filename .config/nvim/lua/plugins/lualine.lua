@@ -4,31 +4,21 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				icons_enabled = true,
-				theme = "gruvbox",
-				component_separators = { left = "", right = "" },
-				section_separators = { left = "", right = "" },
-				always_divide_middle = true,
-				always_show_tabline = true,
-				globalstatus = false,
-				refresh = {
-					statusline = 100,
-					tabline = 100,
-					winbar = 100,
-				},
+				icons_enabled = false,
+				theme = "gruvbox-material",
 			},
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = {
 					"filename",
-					function()
-						return vim.fn["nvim_treesitter#statusline"](180)
-					end,
+					-- function()
+					-- 	return vim.fn["nvim_treesitter#statusline"](180)
+					-- end,
 				},
-				lualine_x = { "encoding", "fileformat", "filetype" },
-				lualine_y = { "progress" },
-				lualine_z = { "location" },
+				lualine_x = { "filetype" },
+				lualine_y = {},
+				lualine_z = {},
 			},
 			inactive_sections = {
 				lualine_a = {},
@@ -38,10 +28,8 @@ return {
 				lualine_y = {},
 				lualine_z = {},
 			},
-			tabline = {},
-			winbar = {},
-			inactive_winbar = {},
-			extensions = {},
 		})
+		vim.api.nvim_set_hl(0, "StatusLine", { bg = "None" })
+		vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "None" })
 	end,
 }
