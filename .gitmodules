@@ -12,4 +12,4 @@
 	url = https://github.com/ohmyzsh/ohmyzsh
 [submodule ".config/alacritty/themes"]
 	path = .config/alacritty/themes
-	url = https://github.com/alacritty/alacritty-themes
+	url = https://github.com/alacritty/alacritty-theme
