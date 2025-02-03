@@ -5,7 +5,7 @@ return {
 		require("lualine").setup({
 			options = {
 				icons_enabled = false,
-				theme = "gruvbox-material",
+				theme = "modus-vivendi",
 			},
 			sections = {
 				lualine_a = { "mode" },
