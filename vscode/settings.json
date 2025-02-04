@@ -5,7 +5,7 @@
         "asvetliakov.vscode-neovim": 1
     },
     "editor.fontFamily": "FiraMono Nerd Font",
-    "editor.fontSize": 15.5,
+    "editor.fontSize": 17,
     "editor.folding": false,
     "editor.formatOnSave": false,
     "editor.guides.indentation": false,
@@ -17,21 +17,28 @@
     "scm.diffDecorations": "none",
 
     "telemetry.telemetryLevel": "off",
+    "terminal.integrated.fontSize": 16.5,
 
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
 
     "workbench.colorCustomizations": {
-        "editor.background": "#11111b",
-        "editorGroupHeader.tabsBackground": "#11111b",
-        "editorGutter.background": "#11111b",
-        "sideBar.background": "#11111b",
-        "tab.activeBorderTop": "#11111b",
-        "tab.activeBorder": "#11111b",
-        "tab.inactiveBackground": "#11111b"
+        "activityBar.background": "#050505",
+        "editor.background": "#050505",
+        "editorGroupHeader.tabsBackground": "#050505",
+        "editorGutter.background": "#050505",
+        "panel.background": "#050505",
+        "sideBar.background": "#050505",
+        "tab.activeBorderTop": "#050505",
+        "tab.activeBorder": "#050505",
+        "tab.inactiveBackground": "#050505",
+        "titleBar.activeBackground": "#050505",
+        "terminal.background": "#050505",
+        "statusBar.background": "#101010",
+        "statusBar.foreground": "#d3d1d1"
     },
-    "workbench.colorTheme": "Catppuccin Noctis Mocha",
+    "workbench.colorTheme": "Rosé Pine (no italics)",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
