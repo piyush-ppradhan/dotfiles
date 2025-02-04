@@ -1,6 +1,7 @@
 vim.opt.guicursor = ""
 vim.opt.background = "dark"
 vim.opt.termguicolors = true
+vim.opt.colorcolumn = "79"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false

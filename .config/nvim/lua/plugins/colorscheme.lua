@@ -1,14 +1,17 @@
 return {
 	{
-		"craftzdog/solarized-osaka.nvim",
+		"rose-pine/neovim",
 		config = function()
-			require("solarized-osaka").setup({
-				transparent = true,
+			require("rose-pine").setup({
+				main = "main",
+				dark_variant = "main",
 				styles = {
-					keywords = { italic = false },
+					bold = false,
+					italic = false,
+					transparency = true,
 				},
 			})
-			vim.cmd.colorscheme("solarized-osaka")
+			vim.cmd.colorscheme("rose-pine")
 		end,
 	},
 }
