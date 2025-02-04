@@ -1,0 +1,66 @@
+{
+    "breadcrumbs.enabled": false,
+
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.fontFamily": "FiraMono Nerd Font",
+    "editor.fontSize": 15.5,
+    "editor.folding": false,
+    "editor.formatOnSave": false,
+    "editor.guides.indentation": false,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [79],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.enabled": false,
+
+    "scm.diffDecorations": "none",
+
+    "telemetry.telemetryLevel": "off",
+
+    "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "hidden",
+
+    "workbench.colorCustomizations": {
+        "editor.background": "#11111b",
+        "editorGroupHeader.tabsBackground": "#11111b",
+        "editorGutter.background": "#11111b",
+        "sideBar.background": "#11111b",
+        "tab.activeBorderTop": "#11111b",
+        "tab.activeBorder": "#11111b",
+        "tab.inactiveBackground": "#11111b"
+    },
+    "workbench.colorTheme": "Catppuccin Noctis Mocha",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+
+    "[c]": {
+        "editor.semanticHighlighting.enabled": true,
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
+    "[cpp]": {
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.suggest.insertMode": "replace"
+    },
+    "C_Cpp.clang_format_style": "Google",
+
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnSave": true,
+    },
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+}

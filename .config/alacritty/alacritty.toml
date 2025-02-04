@@ -4,7 +4,7 @@ import = [
 ]
 
 [font]
-normal = {family = "JetBrainsMono Nerd Font Mono"}
+normal = {family = "FiraMono Nerd Font"}
 size = 12
 
 [colors.primary]
