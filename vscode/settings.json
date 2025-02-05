@@ -23,21 +23,6 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
 
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#050505",
-        "editor.background": "#050505",
-        "editorGroupHeader.tabsBackground": "#050505",
-        "editorGutter.background": "#050505",
-        "panel.background": "#050505",
-        "sideBar.background": "#050505",
-        "tab.activeBorderTop": "#050505",
-        "tab.activeBorder": "#050505",
-        "tab.inactiveBackground": "#050505",
-        "titleBar.activeBackground": "#050505",
-        "terminal.background": "#050505",
-        "statusBar.background": "#101010",
-        "statusBar.foreground": "#d3d1d1"
-    },
     "workbench.colorTheme": "Rosé Pine (no italics)",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.enabled": false,

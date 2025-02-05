@@ -5,7 +5,7 @@ import = [
 
 [font]
 normal = {family = "FiraMono Nerd Font"}
-size = 17.5
+size = 12.5
 
 [colors.primary]
-background = "#050505"
+background = "#090909"
