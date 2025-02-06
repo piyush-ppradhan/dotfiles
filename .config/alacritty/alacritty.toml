@@ -4,8 +4,8 @@ import = [
 ]
 
 [font]
-normal = {family = "FiraMono Nerd Font"}
-size = 12.5
+normal = {family = "UbuntuMono Nerd Font"}
+size = 14
 
 [colors.primary]
 background = "#090909"
