@@ -8,7 +8,7 @@ export PATH
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/Users/pradhan/.venv/formatter/bin"
 export PATH="$PATH:/Users/pradhan/.local/bin"
-export PATH="$PATH:/Users/pradhan/.local/share/bob/nightly/bin"
+export PATH="$PATH:/Users/pradhan/scripts"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -127,6 +127,7 @@ alias c="/opt/homebrew/bin/code"
 alias paraview="/opt/homebrew/bin/paraview"
 alias pytest="pytest -v"
 alias vim="nvim"
+alias ts="tmux-sessionizer"
 
 function conda_init () {
     # >>> conda initialize >>>

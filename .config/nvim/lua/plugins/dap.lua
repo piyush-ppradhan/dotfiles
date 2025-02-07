@@ -8,7 +8,7 @@ return {
 
 			dap.adapters.python = {
 				type = "executable",
-				command = (os.getenv("VIRTUAL_ENV") or "/usr") .. "/bin/python",
+				command = (require("os").getenv("VIRTUAL_ENV") or "/usr") .. "/bin/python",
 				args = { "-m", "debugpy.adapter" },
 			}
 
@@ -27,7 +27,7 @@ return {
 
 			dap.configurations.c = {
 				{
-					name = "Launch",
+					name = "Debug C/C++",
 					type = "lldb",
 					request = "launch",
 					program = function()
@@ -46,10 +46,14 @@ return {
 				{
 					type = "python",
 					request = "launch",
-					name = "Debug python file",
+					name = "Debug Python",
 					program = "${file}",
 					cwd = function()
-						vim.loop.cwd()
+						--vim.loop.cwd()
+						local raw_path = vim.loop.cwd()
+						vim.cmd('cd ' .. raw_path .. '/../')
+						local result = vim.loop.cwd() -- normalized.
+						vim.cmd('cd -') -- restore.
 					end,
 					pythonPath = function()
 						local env = os.getenv("VIRTUAL_ENV") .. "/bin/python"
@@ -107,6 +111,6 @@ return {
 			require("telescope").load_extension("dap")
 		end,
 	},
-	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
+	{ "rcarriga/nvim-dap-ui",             dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
 	{ "nvim-telescope/telescope-dap.nvim" },
 }

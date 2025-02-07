@@ -4,8 +4,11 @@ import = [
 ]
 
 [font]
-normal = {family = "UbuntuMono Nerd Font"}
-size = 14
+normal = {family = "JetBrainsMono Nerd Font"}
+size = 17.5
 
 [colors.primary]
 background = "#090909"
+
+[keyboard]
+bindings = [{key = "f", mods="Control", command = {program = "zsh", args = ["-c", "$HOME/scripts/tmux-sessionizer"]}}]
