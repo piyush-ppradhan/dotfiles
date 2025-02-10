@@ -1,11 +1,11 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/rose_pine.toml"
+    "~/.config/alacritty/themes/themes/tokyo_night_bright.toml"
 ]
 
 [font]
 normal = {family = "JetBrainsMono Nerd Font"}
-size = 17.5
+size = 17
 
 [colors.primary]
 background = "#090909"
