@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="awesomepanda"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -120,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-export VIRTUAL_ENV_DISABLE_PROMPT=0
+export VIRTUAL_ENV_DISABLE_PROMPT=
 
 alias ls="ls --color=auto"
 alias c="/opt/homebrew/bin/code"
@@ -168,4 +168,3 @@ function research_env () {
 function jax_env () {
 	source /Users/pradhan/.venv/jax_env/bin/activate
 }
-

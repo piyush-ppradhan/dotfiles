@@ -1,17 +1,20 @@
 return {
 	{
-		"folke/tokyonight.nvim",
+		"ellisonleao/gruvbox.nvim",
 		config = function()
-			require("tokyonight").setup({
-				style = "night",
-				transparent = true,
-				terminal_colors = true,
-				styles = {
-					comments = { italic = false },
-					keywords = { italic = false },
+			require("gruvbox").setup({
+				terminal_colors = true, -- add neovim terminal colors
+				italic = {
+					strings = false,
+					emphasis = false,
+					comments = false,
+					operators = false,
+					folds = false,
 				},
+				contrast = "hard",
+				transparent_mode = true,
 			})
-			vim.cmd.colorscheme("tokyonight")
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 }

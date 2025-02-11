@@ -22,6 +22,7 @@ return {
 			{ "williamboman/mason-lspconfig.nvim" },
 		},
 		config = function()
+			vim.diagnostic.config({ virtual_text = true })
 			local lsp_zero = require("lsp-zero")
 			lsp_zero.extend_lspconfig()
 

@@ -1,14 +1,11 @@
-[general]
-import = [
-    "~/.config/alacritty/themes/themes/tokyo_night_bright.toml"
-]
+# [general]
+# import = [
+#     "~/.config/alacritty/themes/themes/tokyo_night_bright.toml"
+# ]
 
 [font]
 normal = {family = "JetBrainsMono Nerd Font"}
-size = 17
+size = 16.5
 
 [colors.primary]
-background = "#090909"
-
-[keyboard]
-bindings = [{key = "f", mods="Control", command = {program = "zsh", args = ["-c", "$HOME/scripts/tmux-sessionizer"]}}]
+background = "#050505"
