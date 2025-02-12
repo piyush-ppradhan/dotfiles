@@ -4,7 +4,6 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "conform.nvim": { "branch": "master", "commit": "363243c03102a531a8203311d4f2ae704c620d9b" },
-  "evergarden": { "branch": "mega", "commit": "e0e34feaca5325a12899c0b72f747814635db267" },
   "gruvbox.nvim": { "branch": "main", "commit": "089b60e92aa0a1c6fa76ff527837cd35b6f5ac81" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "julia-vim": { "branch": "master", "commit": "7946ce330b6287c9293aece5b14feafa1125779e" },
@@ -21,11 +20,8 @@
   "nvim-treesitter": { "branch": "master", "commit": "a840137349fcc35b5ad2c718a9b034b93012fa43" },
   "nvim-web-devicons": { "branch": "master", "commit": "402377242b04be3f4f0f3720bd952df86e946c30" },
   "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },
-  "refactoring.nvim": { "branch": "master", "commit": "2db6d378e873de31d18ade549c2edba64ff1c2e3" },
   "telescope-dap.nvim": { "branch": "master", "commit": "783366bd6c1e7fa0a5c59c07db37f49c805a28df" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "dae2eac9d91464448b584c7949a31df8faefec56" },
   "telescope.nvim": { "branch": "master", "commit": "415af52339215926d705cccc08145f3782c4d132" },
-  "tokyonight.nvim": { "branch": "main", "commit": "84ea0b5f4651afdf50ececaf6f110fe9d9dc9458" },
-  "trouble.nvim": { "branch": "main", "commit": "6f380b8826fb819c752c8fd7daaee9ef96d4c689" },
   "vim-commentary": { "branch": "master", "commit": "64a654ef4a20db1727938338310209b6a63f60c9" }
 }

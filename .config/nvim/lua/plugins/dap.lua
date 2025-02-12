@@ -1,6 +1,7 @@
 return {
 	{
 		"mfussenegger/nvim-dap",
+		lazy = true,
 		config = function()
 			local dap = require("dap")
 			local dapui = require("dapui")
@@ -51,9 +52,9 @@ return {
 					cwd = function()
 						--vim.loop.cwd()
 						local raw_path = vim.loop.cwd()
-						vim.cmd('cd ' .. raw_path .. '/../')
+						vim.cmd("cd " .. raw_path .. "/../")
 						local result = vim.loop.cwd() -- normalized.
-						vim.cmd('cd -') -- restore.
+						vim.cmd("cd -") -- restore.
 					end,
 					pythonPath = function()
 						local env = os.getenv("VIRTUAL_ENV") .. "/bin/python"
@@ -111,6 +112,6 @@ return {
 			require("telescope").load_extension("dap")
 		end,
 	},
-	{ "rcarriga/nvim-dap-ui",             dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
+	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
 	{ "nvim-telescope/telescope-dap.nvim" },
 }

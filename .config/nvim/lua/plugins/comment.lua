@@ -1,3 +1,3 @@
 return {
-	{ "tpope/vim-commentary", lazy = false },
+	{ "tpope/vim-commentary", lazy = true },
 }

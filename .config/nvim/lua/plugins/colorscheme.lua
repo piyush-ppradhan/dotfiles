@@ -4,6 +4,7 @@ return {
 		config = function()
 			require("gruvbox").setup({
 				terminal_colors = true, -- add neovim terminal colors
+				bold = false,
 				italic = {
 					strings = false,
 					emphasis = false,
