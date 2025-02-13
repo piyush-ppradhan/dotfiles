@@ -5,7 +5,7 @@
 
 [font]
 normal = {family = "JetBrainsMono Nerd Font"}
-size = 13
+size = 12.5
 
 [colors.primary]
 background = "#050505"

@@ -1,10 +1,7 @@
 {
     "breadcrumbs.enabled": false,
 
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "editor.fontFamily": "FiraMono Nerd Font",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 17,
     "editor.folding": false,
     "editor.formatOnSave": false,
@@ -23,8 +20,6 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
 
-    "workbench.colorTheme": "Rosé Pine (no italics)",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
 
