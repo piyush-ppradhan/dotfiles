@@ -2,7 +2,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 export PATH="$PATH:/home/pradhan/.venv/jax_env/bin:/home/pradhan/.venv/formatter/bin:/home/pradhan/.venv/general/bin"
 export PATH="$PATH:/home/pradhan/.juliaup/bin:/home/pradhan/.cargo/bin:/home/pradhan/.local/share/bob/nvim-bin"
 
-
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'

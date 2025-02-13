@@ -1,21 +1,17 @@
 return {
 	{
-		"ellisonleao/gruvbox.nvim",
+		"rose-pine/neovim",
 		config = function()
-			require("gruvbox").setup({
-				terminal_colors = true, -- add neovim terminal colors
-				bold = false,
-				italic = {
-					strings = false,
-					emphasis = false,
-					comments = false,
-					operators = false,
-					folds = false,
+			require("rose-pine").setup({
+				variant = "main",
+				dark_variant = "main",
+				styles = {
+					bold = true,
+					italic = false,
+					transparency = true,
 				},
-				contrast = "hard",
-				transparent_mode = true,
 			})
-			vim.cmd.colorscheme("gruvbox")
+			vim.cmd.colorscheme("rose-pine")
 		end,
 	},
 }

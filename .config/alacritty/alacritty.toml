@@ -4,8 +4,8 @@
 # ]
 
 [font]
-normal = {family = "FiraMono Nerd Font"}
-size = 17
+normal = {family = "JetBrainsMono Nerd Font"}
+size = 13
 
 [colors.primary]
 background = "#050505"
