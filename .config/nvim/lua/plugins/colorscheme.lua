@@ -1,17 +1,11 @@
 return {
 	{
-		"rose-pine/neovim",
+		"RRethy/base16-nvim",
+		lazy = false,
 		config = function()
-			require("rose-pine").setup({
-				variant = "moon",
-				dark_variant = "moon",
-				styles = {
-					bold = false,
-					italic = false,
-					transparency = true,
-				},
-			})
-			vim.cmd.colorscheme("rose-pine")
+			vim.cmd.colorscheme("base16-black-metal-gorgoroth")
+			vim.api.nvim_set_hl(0, "@variable.builtin.python", { fg = "#5f8787", bg = "None", italic = false })
+			vim.api.nvim_set_hl(0, "@function.builtin.python", { fg = "#888888", bg = "None", italic = false })
 		end,
 	},
 }

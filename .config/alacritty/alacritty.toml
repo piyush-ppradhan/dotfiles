@@ -1,45 +1,38 @@
+[colors]
+draw_bold_text_with_bright_colors = false
+
+# Default colors
 [colors.primary]
-background = '#000000'
-foreground = '#e0def4'
+background = '0x000000'
+foreground = '0xc1c1c1'
 
+# Colors the cursor will use if `custom_cursor_colors` is true
 [colors.cursor]
-text = '#e0def4'
-cursor = '#56526e'
+text = '0x000000'
+cursor = '0xc1c1c1'
 
-[colors.vi_mode_cursor]
-text = '#e0def4'
-cursor = '#56526e'
-
-[colors.selection]
-text = '#e0def4'
-background = '#44415a'
+# Normal colors
 [colors.normal]
-black = '#393552'
-red = '#eb6f92'
-green = '#3e8fb0'
-yellow = '#f6c177'
-blue = '#9ccfd8'
-magenta = '#c4a7e7'
-cyan = '#ea9a97'
-white = '#e0def4'
+black = '0x000000'
+red = '0x5f8787'
+green = '0x9b8d7f'
+yellow = '0x8c7f70'
+blue = '0x888888'
+magenta = '0x999999'
+cyan = '0xaaaaaa'
+white = '0xc1c1c1'
 
+# Bright colors
 [colors.bright]
-black = '#6e6a86'
-red = '#eb6f92'
-green = '#3e8fb0'
-yellow = '#f6c177'
-blue = '#9ccfd8'
-magenta = '#c4a7e7'
-cyan = '#ea9a97'
-white = '#e0def4'
-
-[colors.hints]
-start = { foreground = '#908caa', background = '#2a273f' }
-end = { foreground = '#6e6a86', background = '#2a273f' }
+black = '0x333333'
+red = '0xaaaaaa'
+green = '0x121212'
+yellow = '0x222222'
+blue = '0x999999'
+magenta = '0x999999'
+cyan = '0x444444'
+white = '0xc1c1c1'
 
 [font]
 normal = {family = "JetBrainsMono Nerd Font"}
-size = 17
-
-# [colors.primary]
-# background = "#050505"
+size = 12
