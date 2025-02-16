@@ -1,37 +1,28 @@
-[colors]
-draw_bold_text_with_bright_colors = false
-
-# Default colors
 [colors.primary]
-background = '0x000000'
-foreground = '0xc1c1c1'
-
-# Colors the cursor will use if `custom_cursor_colors` is true
-[colors.cursor]
-text = '0x000000'
-cursor = '0xc1c1c1'
+background = '#101010'
+foreground = '#d4be98'
 
 # Normal colors
 [colors.normal]
-black = '0x000000'
-red = '0x5f8787'
-green = '0x9b8d7f'
-yellow = '0x8c7f70'
-blue = '0x888888'
-magenta = '0x999999'
-cyan = '0xaaaaaa'
-white = '0xc1c1c1'
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
 
-# Bright colors
+# Bright colors (same as normal colors)
 [colors.bright]
-black = '0x333333'
-red = '0xaaaaaa'
-green = '0x121212'
-yellow = '0x222222'
-blue = '0x999999'
-magenta = '0x999999'
-cyan = '0x444444'
-white = '0xc1c1c1'
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
 
 [font]
 normal = {family = "JetBrainsMono Nerd Font"}
