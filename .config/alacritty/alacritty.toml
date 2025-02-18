@@ -1,5 +1,5 @@
 [colors.primary]
-background = '#101010'
+background = '#090909'
 foreground = '#d4be98'
 
 # Normal colors
@@ -25,5 +25,5 @@ cyan    = '#89b482'
 white   = '#d4be98'
 
 [font]
-normal = {family = "JetBrainsMono Nerd Font"}
-size = 12
+normal = {family = "CaskaydiaMono NF"}
+size = 12.2
