@@ -1,22 +1,22 @@
 return {
 	{
-		"catppuccin/nvim",
+		"rose-pine/neovim",
 		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-				background = {
-					light = "latte",
-					dark = "mocha",
-				},
-				transparent_background = true,
-				no_italic = true,
-				no_bold = false,
+			require("rose-pine").setup({
+				variant = "moon",
+				dark_variant = "moon",
+				dim_inactive_windows = false,
+				extend_background_behind_borders = true,
+
 				styles = {
-					comments = {},
-					conditionals = {},
+					bold = false,
+					italic = false,
 				},
 			})
-			vim.cmd.colorscheme("catppuccin")
+
+			vim.cmd("colorscheme rose-pine")
+			vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
+			vim.api.nvim_set_hl(0, "NormalNC", { bg = "None" })
 		end,
 	},
 }
