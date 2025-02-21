@@ -1,6 +1,6 @@
 [colors.primary]
 foreground = "#e0def4"
-background = "#090909"
+background = "#000000"
 dim_foreground = "#908caa"
 bright_foreground = "#e0def4"
 
@@ -71,6 +71,5 @@ cyan = "#ea9a97"
 white = "#e0def4"
 
 [font]
-normal = {family = "JetBrainsMono Nerd Font"}
-# normal = {family = "Consolas"}
-size = 17
+normal = { family = "JetBrainsMono Nerd Font"}
+size = 11.4

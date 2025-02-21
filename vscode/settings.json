@@ -1,24 +1,36 @@
 {
     "breadcrumbs.enabled": false,
-
+    
+    "editor.lightbulb.enabled": "off",
+    "editor.lineNumbers": "relative",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontSize": 17,
+    "editor.fontSize": 15,
     "editor.folding": false,
     "editor.formatOnSave": false,
     "editor.guides.indentation": false,
     "editor.minimap.enabled": false,
     "editor.rulers": [79],
-    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticHighlighting.enabled": false,
     "editor.stickyScroll.enabled": false,
+
+    "notebook.formatOnSave.enabled": true,
+
+    "ruff.lint.ignore": ["E731"],
 
     "scm.diffDecorations": "none",
 
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.fontSize": 16.5,
+    "terminal.integrated.fontSize": 14,
+
+    "vim.handleKeys": {
+        "<C-p>": false
+    },
+    "vim.useSystemClipboard": true,
 
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 0,
 
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
@@ -47,7 +59,9 @@
 
     "[python]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
+        "editor.defaultFormatter": "charliermarsh.ruff",
     },
+    "window.customTitleBarVisibility": "auto",
+    "workbench.sideBar.location": "right",
 
 }
