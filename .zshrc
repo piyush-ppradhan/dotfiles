@@ -1,14 +1,27 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
-path=('/Users/pradhan/.juliaup/bin' $path)
-export PATH
-export PATH="$PATH:/opt/homebrew/bin"
-export PATH="$PATH:/Users/pradhan/.venv/formatter/bin"
-export PATH="$PATH:/Users/pradhan/.local/bin"
-export PATH="$PATH:/Users/pradhan/scripts"
+if [ -d "/opt/homebrew/bin" ]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+path+=('~/.juliaup/bin')
+if [ -d "/opt/homebrew/bin" ]; then
+	path+=("/opt/homebrew/bin")
+fi
+
+path+=("~/.venv/formatter/bin")
+path+=("~/.local/bin")
+path+=("~/scripts")
+
+if [ -d "~/Tools/paraview/bin" ]; then
+	path+=("~/Tools/paraview/bin")
+fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -122,13 +135,6 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
-alias ls="ls --color=auto"
-alias c="/opt/homebrew/bin/code"
-alias paraview="/opt/homebrew/bin/paraview"
-alias pytest="pytest -v"
-alias vim="nvim"
-alias ts="tmux-sessionizer"
-
 function conda_init () {
     # >>> conda initialize >>>
     # !! Contents within this block are managed by 'conda init' !!
@@ -146,25 +152,29 @@ function conda_init () {
     # <<< conda initialize <<<
 }
 
-function fenics_env () {
-    conda_init
-    conda activate /Users/pradhan/.venv/fenics_env
-}
+alias fenics_env='conda_init && conda activate ~/.venv/fenics_env'
+alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
+alias jax_env='source ~/.venv/jax_env/bin/activate'
+alias jax_env='source ~/.venv/research_env/bin/activate'
+alias general='source ~/.venv/general/bin/activate'
 
-function formatter () {
-    conda_init
-    conda activate /Users/pradhan/.venv/formatter
-}
+if [ -d "/opt/homebrew/bin" ]; then
+	alias paraview="/opt/homebrew/bin/paraview"
+fi
 
-function fenics_legacy () {
-    conda_init
-    conda activate /Users/pradhan/.venv/fenics_legacy
-}
+alias pytest="pytest -v"
+alias vim="nvim"
 
-function research_env () {
-    source /Users/pradhan/.venv/research_env/bin/activate
-}
+alias ls="ls --color=auto"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias vim=nvim
 
-function jax_env () {
-	source /Users/pradhan/.venv/jax_env/bin/activate
-}
+if command -v batcat >/dev/null 2>&1; then
+	alias cat="batcat --theme=TwoDark"
+fi
+
+if command -v eza >/dev/null 2>&1; then
+	alias ls="eza"
+fi

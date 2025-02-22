@@ -30,7 +30,6 @@ alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
 alias jax_env='source ~/.venv/jax_env/bin/activate.fish'
 alias formatter='source ~/.venv/formatter/bin/activate.fish'
 alias general='source ~/.venv/general/bin/activate.fish'
-alias gcfoam='docker run --mount type=bind,source="/home/pradhan/Programs/foam",target="/home/gcfoam/works/GeoChemFoam-5.1/runs" -it jcmaes/geochemfoam-5.1:latest'
 
 export PYTHONPATH="$PYTHONPATH:/home/pradhan/Programs/python/JLBM"
 
@@ -44,10 +43,3 @@ end
 if type -q eza
 	alias ls="eza"
 end
-
-export STARSHIP_CONFIG="$HOME/.config/starship.toml"
-if type -q starship
-    starship init fish | source
-end
-
-export QT_QPA_PLATFORMTHEME=qt5ct
