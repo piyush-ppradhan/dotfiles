@@ -175,6 +175,10 @@ if command -v batcat >/dev/null 2>&1; then
 	alias cat="batcat --theme=rose-pine"
 fi
 
+if command -v bat >/dev/null 2>&1; then
+	alias cat="bat --theme=rose-pine"
+fi
+
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza"
 fi
