@@ -155,7 +155,7 @@ function conda_init () {
 alias fenics_env='conda_init && conda activate ~/.venv/fenics_env'
 alias fenics_legacy='conda_init && conda activate ~/.venv/fenics_legacy'
 alias jax_env='source ~/.venv/jax_env/bin/activate'
-alias jax_env='source ~/.venv/research_env/bin/activate'
+alias research_env='source ~/.venv/research_env/bin/activate'
 alias general='source ~/.venv/general/bin/activate'
 
 if [ -d "/opt/homebrew/bin" ]; then
@@ -172,7 +172,7 @@ alias l='ls -CF'
 alias vim=nvim
 
 if command -v batcat >/dev/null 2>&1; then
-	alias cat="batcat --theme=TwoDark"
+	alias cat="batcat --theme=rose-pine"
 fi
 
 if command -v eza >/dev/null 2>&1; then
