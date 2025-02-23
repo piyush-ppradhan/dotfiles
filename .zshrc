@@ -180,5 +180,10 @@ if command -v bat >/dev/null 2>&1; then
 fi
 
 if command -v eza >/dev/null 2>&1; then
-	alias ls="eza"
+	alias ls="eza --color=always --icons=always"
+fi
+
+
+if command -v zoxide >/dev/null 2>&1; then
+	eval "$(zoxide init zsh)"
 fi
