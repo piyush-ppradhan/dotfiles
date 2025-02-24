@@ -71,5 +71,5 @@ cyan = "#ebbcba"
 white = "#e0def4"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font"}
-size = 17
+normal = { family = "TypestarOCR Nerd Font"}
+size = 11.15

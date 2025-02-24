@@ -10,18 +10,13 @@ if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-path+=('~/.juliaup/bin')
 if [ -d "/opt/homebrew/bin" ]; then
 	path+=("/opt/homebrew/bin")
 fi
 
-path+=("~/.venv/formatter/bin")
-path+=("~/.local/bin")
-path+=("~/scripts")
-
-if [ -d "~/Tools/paraview/bin" ]; then
-	path+=("~/Tools/paraview/bin")
-fi
+path+=("$HOME/.juliaup/bin")
+path+=("$HOME/.venv/formatter/bin")
+path+=("$HOME/.local/bin")
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -160,6 +155,10 @@ alias general='source ~/.venv/general/bin/activate'
 
 if [ -d "/opt/homebrew/bin" ]; then
 	alias paraview="/opt/homebrew/bin/paraview"
+fi
+
+if [ -d "$HOME/Tools/paraview/bin" ]; then
+	alias paraview="$HOME/Tools/paraview/bin/paraview"
 fi
 
 alias pytest="pytest -v"
