@@ -1,4 +1,4 @@
 theme = rose-pine
 background = 000000
-font-family = TypestarOCR Nerd Font
-font-size = 11.5
+font-size = 12
+font-feature = liga
