@@ -13,11 +13,11 @@ return {
 			local dapui = require("dapui")
 			dapui.setup()
 
-			dap.adapters.python = {
-				type = "executable",
-				command = (os.getenv("VIRTUAL_ENV") or "/usr") .. "/bin/python",
-				args = { "-m", "debugpy.adapter" },
-			}
+			-- dap.adapters.python = {
+			-- 	type = "executable",
+			-- 	command = (os.getenv("VIRTUAL_ENV") or "/usr") .. "/bin/python",
+			-- 	args = { "-m", "debugpy.adapter" },
+			-- }
 
 			dap.adapters.lldb = {
 				type = "executable",
@@ -49,40 +49,25 @@ return {
 
 			dap.configurations.cpp = dap.configurations.c
 
-			-- dap.configurations.cpp = {
+			-- dap.configurations.python = {
 			-- 	{
-			-- 		name = "Launch C++",
-			-- 		type = "lldb",
+			-- 		type = "python",
 			-- 		request = "launch",
-			-- 		program = function()
-			-- 			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+			-- 		name = "Debug python file",
+			-- 		program = "${file}",
+			-- 		cwd = function()
+			-- 			vim.fn.getcwd()
 			-- 		end,
-			-- 		cwd = "${workspaceFolder}",
-			-- 		stopOnEntry = false,
-			-- 		args = {},
-			-- 		runInTerminal = false,
+			-- 		pythonPath = function()
+			-- 			local env = os.getenv("VIRTUAL_ENV") .. "/bin/python"
+			-- 			if vim.fn.executable(env) == 1 then
+			-- 				return env
+			-- 			else
+			-- 				return "/usr/bin/python3"
+			-- 			end
+			-- 		end,
 			-- 	},
 			-- }
-
-			dap.configurations.python = {
-				{
-					type = "python",
-					request = "launch",
-					name = "Debug python file",
-					program = "${file}",
-					cwd = function()
-						vim.fn.getcwd()
-					end,
-					pythonPath = function()
-						local env = os.getenv("VIRTUAL_ENV") .. "/bin/python"
-						if vim.fn.executable(env) == 1 then
-							return env
-						else
-							return "/usr/bin/python3"
-						end
-					end,
-				},
-			}
 
 			vim.keymap.set("n", "<F5>", function()
 				dap.continue()

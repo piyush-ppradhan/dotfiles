@@ -1,22 +1,35 @@
 [
-	{
-		"key": "shift+k",
-		"command": "editor.action.showHover",
-		"when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-	},
-	{
-		"key": "ctrl+oem_comma", // This is for Ctrl+
-		"command": "editor.action.outdentLines",
-		"when": "editorTextFocus && vim.active"
-	},
-	{
-		"key": "ctrl+oem_period", // This is for Ctrl+>
-		"command": "editor.action.indentLines",
-		"when": "editorTextFocus && vim.active"
-	},
-	{
-		"key": "ctrl+F",
-		"command": "workbench.action.findInFiles",
-		"when": "vim.mode == 'Normal'"
-	}
+    {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+oem_comma", // This is for Ctrl+
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "ctrl+oem_period", // This is for Ctrl+>
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "ctrl+F",
+        "command": "workbench.action.findInFiles",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+b", // or any key combination you prefer
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+w k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+    }
 ]

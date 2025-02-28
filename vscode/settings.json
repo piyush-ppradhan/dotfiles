@@ -1,16 +1,17 @@
 {
     "breadcrumbs.enabled": false,
     
+    "editor.cursorSmoothCaretAnimation": "off",
     "editor.lightbulb.enabled": "off",
     "editor.lineNumbers": "relative",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontSize": 15,
+    "editor.fontSize": 14,
     "editor.folding": false,
     "editor.formatOnSave": false,
     "editor.guides.indentation": false,
     "editor.minimap.enabled": false,
     "editor.rulers": [79],
-    "editor.semanticHighlighting.enabled": false,
+    //"editor.semanticHighlighting.enabled": false,
     "editor.stickyScroll.enabled": false,
 
     "notebook.formatOnSave.enabled": true,
@@ -31,7 +32,20 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
     "window.zoomLevel": 0,
-
+    "workbench.colorCustomizations": {
+        "editor.background": "#050505",
+        "sideBar.background": "#050505",
+        "activityBar.background": "#050505",
+        "terminal.background" : "#050505",
+        "panel.background" : "#050505",
+        "editorGroupHeader.tabsBackground": "#050505",
+        "editorGroupHeader.noTabsBackground": "#050505",
+        "titleBar.activeBackground": "#050505",
+        "statusBar.background": "#050505",
+        "statusBar.border": "#050505",
+        "terminal.foreground": "#ebdbb2",
+        "editorGutter.background": "#050505"
+    },
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
 
@@ -62,6 +76,6 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "window.customTitleBarVisibility": "auto",
-    "workbench.sideBar.location": "right",
-
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Gruvbox Glass",
 }
