@@ -17,8 +17,6 @@ vim.opt.autoread = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.exrc = true
-vim.opt.secure = false
 vim.loader.enable()
 vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
 
