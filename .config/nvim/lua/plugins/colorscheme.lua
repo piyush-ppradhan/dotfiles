@@ -29,12 +29,14 @@ return {
 					folds = false,
 				},
 				contrast = "hard",
-				transparent_mode = false,
+				transparent_mode = true,
 			})
 			vim.cmd.colorscheme("gruvbox")
 			vim.api.nvim_set_hl(0, "Normal", { bg = "#121212" })
 			vim.api.nvim_set_hl(0, "NormalNC", { bg = "#121212" })
 			vim.api.nvim_set_hl(0, "SignColumn", { bg = "#121212" })
+			vim.api.nvim_set_hl(0, "@variable.member.python", { fg = "#e5cfa0" })
+			vim.api.nvim_set_hl(0, "@variable.builtin.python", { fg = "#6ea295" })
 		end,
 	},
 }

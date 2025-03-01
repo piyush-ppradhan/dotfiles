@@ -6,5 +6,6 @@ config.colors = {
 }
 config.hide_tab_bar_if_only_one_tab = true
 config.window_close_confirmation = "NeverPrompt"
-config.font_size = 11.2
+config.font_size = 14
+config.font = wezterm.font("Consolas")
 return config

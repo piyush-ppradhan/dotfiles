@@ -1,18 +1,21 @@
 {
     "breadcrumbs.enabled": false,
     
+    "python.analysis.reportExtraTelemetry": false,
     "editor.cursorSmoothCaretAnimation": "off",
+    "editor.experimental.treeSitterTelemetry": false,
     "editor.lightbulb.enabled": "off",
     "editor.lineNumbers": "relative",
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 16.8,
     "editor.folding": false,
     "editor.formatOnSave": false,
     "editor.guides.indentation": false,
+    //"editor.semanticHighlighting.enabled": false,
     "editor.minimap.enabled": false,
     "editor.rulers": [79],
-    //"editor.semanticHighlighting.enabled": false,
     "editor.stickyScroll.enabled": false,
+
 
     "notebook.formatOnSave.enabled": true,
 
@@ -21,7 +24,7 @@
     "scm.diffDecorations": "none",
 
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
 
     "vim.handleKeys": {
         "<C-p>": false
@@ -32,19 +35,16 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "hidden",
     "window.zoomLevel": 0,
+
     "workbench.colorCustomizations": {
-        "editor.background": "#050505",
-        "sideBar.background": "#050505",
-        "activityBar.background": "#050505",
-        "terminal.background" : "#050505",
-        "panel.background" : "#050505",
-        "editorGroupHeader.tabsBackground": "#050505",
-        "editorGroupHeader.noTabsBackground": "#050505",
-        "titleBar.activeBackground": "#050505",
-        "statusBar.background": "#050505",
-        "statusBar.border": "#050505",
-        "terminal.foreground": "#ebdbb2",
-        "editorGutter.background": "#050505"
+        "editor.background": "#121212",
+        "statusBar.background": "#121212",
+        "activityBar.background": "#121212",
+        "sideBar.background": "#121212",
+        "titleBar.activeBackground": "#121212",
+        "terminal.activeBackground": "#121212",
+        "panel.background": "#121212",
+        "editorGroupHeader.tabsBackground": "#121212"
     },
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
@@ -76,6 +76,6 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "window.customTitleBarVisibility": "auto",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Gruvbox Glass",
 }
