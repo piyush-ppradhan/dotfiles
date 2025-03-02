@@ -189,3 +189,12 @@ fi
 if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init zsh)"
 fi
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/pradhan/.opam/opam-init/init.zsh' ]] || source '/Users/pradhan/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration

@@ -25,5 +25,5 @@ cyan    = '#8ec07c'
 white   = '#ebdbb2'
 
 [font]
-normal = { family = "Consolas"}
-size = 12.5
+normal = { family = "Consolas Nerd Font"}
+size = 19
