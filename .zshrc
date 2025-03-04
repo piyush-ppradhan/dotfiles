@@ -1,7 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
-
 if [ -d "/opt/homebrew/bin" ]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
@@ -22,9 +18,10 @@ export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/applications"
 
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
+#zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
 setopt PROMPT_SUBST
-PROMPT='%F{white} %~%f${vcs_info_msg_0_}%f %F{white}$ '
+#PROMPT='%F{white} %~%f${vcs_info_msg_0_}%f %F{white}$ '
+PROMPT='%~%f${vcs_info_msg_0_}%f $ '
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
 function conda_init () {
@@ -59,7 +56,7 @@ if [ -d "$HOME/Tools/paraview/bin" ]; then
 fi
 
 alias pytest="pytest -v"
-alias vim="nvim"
+
 
 alias ls="ls --color=auto"
 alias ll='ls -alF'
