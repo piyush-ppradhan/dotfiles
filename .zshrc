@@ -64,19 +64,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias vim=nvim
 
-if command -v batcat >/dev/null 2>&1; then
-	alias cat="batcat --theme=rose-pine"
-fi
-
-if command -v bat >/dev/null 2>&1; then
-	alias cat="bat --theme=rose-pine"
-fi
-
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza --color=always --icons=always"
-fi
-
-
-if command -v zoxide >/dev/null 2>&1; then
-	eval "$(zoxide init zsh)"
 fi
