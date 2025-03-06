@@ -2,3 +2,5 @@ vscode
 README.md
 .DS_Store
 ublock_block_lists.txt
+gterminal.preferences
+.git*
