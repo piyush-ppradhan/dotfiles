@@ -1,8 +1,6 @@
 # Default colors
 [colors.primary]
-# hard contrast background = = '#f9f5d7'
-background = '#f9f5d7'
-# soft contrast background = = '#f2e5bc'
+background = '#F1F0E9'
 foreground = '#000000'
 
 # Normal colors
@@ -28,4 +26,4 @@ cyan    = '#427b58'
 white   = '#3c3836'
 [font]
 normal = { family = "Consolas Nerd Font", style="Regular"}
-size = 17
+size = 18
