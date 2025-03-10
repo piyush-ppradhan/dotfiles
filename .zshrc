@@ -39,6 +39,7 @@ alias ls="ls --color=auto"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias pip='uv pip'
 alias vim=nvim
 
 if command -v eza >/dev/null 2>&1; then
