@@ -27,10 +27,11 @@ return {
 			cmp_mappings["<S-Tab>"] = nil
 
 			cmp.setup({
-				-- sources = {
-				-- 	{ name = "path" },
-				-- 	{ name = "buffer" },
-				-- },
+				sources = {
+					{ name = "nvim_lsp" },
+					{ name = "path" },
+					{ name = "buffer" },
+				},
 				mapping = cmp.mappings,
 			})
 		end,
