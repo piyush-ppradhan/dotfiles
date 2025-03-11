@@ -11,18 +11,17 @@ return {
 		end,
 	},
 
-	{ "williamboman/mason.nvim", lazy = false, config = true },
-
 	{
 		"neovim/nvim-lspconfig",
 		cmd = { "LspInfo", "LspInstall", "LspStart" },
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
 			{ "hrsh7th/cmp-nvim-lsp" },
-			{ "williamboman/mason-lspconfig.nvim" },
+			{ "saghen/blink.cmp" },
 		},
 		config = function()
 			vim.diagnostic.config({ virtual_text = true })
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lsp_zero = require("lsp-zero")
 			lsp_zero.extend_lspconfig()
 
@@ -71,18 +70,15 @@ return {
 				},
 			})
 
-			require("mason-lspconfig").setup({
-				ensure_installed = { "clangd", "ruff", "julials", "lua_ls", "pyright" },
-				handlers = {
-					lsp_zero.default_setup,
-					lua_ls = function()
-						local lua_opts = lsp_zero.nvim_lua_ls()
-						require("lspconfig").lua_ls.setup(lua_opts)
-					end,
-					julials = function()
-						require("lspconfig").julials.setup({ julia_env_path = "~/.julia/environments/v1.11" })
-					end,
-				},
+			require("lspconfig").clangd.setup({ capabilities = capabilities })
+
+			local lua_opts = lsp_zero.nvim_lua_ls()
+			lua_opts.capabilities = capabilities
+			require("lspconfig").lua_ls.setup(lua_opts)
+
+			require("lspconfig").julials.setup({
+				julia_env_path = "~/.julia/environments/v1.11",
+				capabilities = capabilities,
 			})
 
 			require("lspconfig").pyright.setup({
@@ -97,6 +93,7 @@ return {
 						},
 					},
 				},
+				capabilities = capabilities,
 			})
 
 			require("lspconfig").ruff.setup({
@@ -107,6 +104,7 @@ return {
 						},
 					},
 				},
+				capabilities = capabilities,
 			})
 		end,
 	},

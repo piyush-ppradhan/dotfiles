@@ -8,6 +8,7 @@ return {
 			vim.keymap.set("n", "<leader>t", fzf.treesitter, {})
 			vim.keymap.set("n", "<leader>/", fzf.grep, {})
 			vim.keymap.set("n", "<leader>g", fzf.git_files, {})
+			vim.keymap.set("n", "<leader>d", fzf.diagnostics_document, {})
 
 			local actions = require("fzf-lua").actions
 			require("fzf-lua").setup({
