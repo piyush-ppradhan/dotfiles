@@ -23,5 +23,5 @@ background = "#090909"
 foreground = "#f0f0f0"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font"}
+normal = { family = "CPMonov07Plain Nerd Font", style="Regular"}
 size = 11.4
