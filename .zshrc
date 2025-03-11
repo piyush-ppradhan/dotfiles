@@ -32,15 +32,15 @@ if [ -d "$HOME/Tools/paraview/bin" ]; then
 	alias paraview="$HOME/Tools/paraview/bin/paraview"
 fi
 
-alias pytest="pytest -v"
-
-
 alias ls="ls --color=auto"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
 alias pip='uv pip'
 alias vim=nvim
+alias pytest="pytest -v"
+alias tmux="tmux -2"
 
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza --color=always --icons=always"

@@ -1,18 +1,23 @@
 return {
 	{
-		"folke/tokyonight.nvim",
+		"loctvl842/monokai-pro.nvim",
 		config = function()
-			require("tokyonight").setup({
-				style = "moon",
-				light_style = "day",
-				transparent = true,
+			require("monokai-pro").setup({
+				transparent_background = true,
 				terminal_colors = true,
 				styles = {
-					comments = { italic = true },
-					keywords = { italic = true },
+					comment = { italic = true },
+					keyword = { italic = true },
+					type = {},
+					storageclass = {},
+					structure = {},
+					parameter = {},
+					annotation = {},
+					tag_attribute = {},
 				},
+				filter = "default",
 			})
-			vim.cmd.colorscheme("tokyonight")
+			vim.cmd.colorscheme("monokai-pro-default")
 		end,
 	},
 }

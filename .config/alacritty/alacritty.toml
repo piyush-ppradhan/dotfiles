@@ -1,27 +1,29 @@
-[colors.bright]
-black = "#444b6a"
-blue = "#7da6ff"
-cyan = "#0db9d7"
-green = "#b9f27c"
-magenta = "#bb9af7"
-red = "#ff7a93"
-white = "#acb0d0"
-yellow = "#ff9e64"
-
-[colors.normal]
-black = "#32344a"
-blue = "#7aa2f7"
-cyan = "#449dab"
-green = "#9ece6a"
-magenta = "#ad8ee6"
-red = "#f7768e"
-white = "#787c99"
-yellow = "#e0af68"
-
 [colors.primary]
-background = "#090909"
-foreground = "#f0f0f0"
+background = '#090909'
+foreground = '#fff1f3'
+
+# Normal colors
+[colors.normal]
+black   = '#2c2525'
+red     = '#fd6883'
+green   = '#adda78'
+yellow  = '#f9cc6c'
+blue    = '#f38d70'
+magenta = '#a8a9eb'
+cyan    = '#85dacc'
+white   = '#fff1f3'
+
+# Bright colors
+[colors.bright]
+black   = '#72696a'
+red     = '#fd6883'
+green   = '#adda78'
+yellow  = '#f9cc6c'
+blue    = '#f38d70'
+magenta = '#a8a9eb'
+cyan    = '#85dacc'
+white   = '#fff1f3'
 
 [font]
-normal = { family = "CPMonov07Plain Nerd Font", style="Regular"}
-size = 11.4
+normal = { family = "JetBrainsMono Nerd Font", style="Regular"}
+size = 11.3
