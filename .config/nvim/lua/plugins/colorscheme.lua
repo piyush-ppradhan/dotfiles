@@ -10,6 +10,7 @@ return {
 				styles = {
 					comments = { italic = true },
 					keywords = { italic = true },
+					functions = { bold = true },
 				},
 			})
 			vim.cmd.colorscheme("tokyonight")
