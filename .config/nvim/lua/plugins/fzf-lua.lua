@@ -19,6 +19,12 @@ return {
 						["ctrl-s"] = actions.file_split,
 					},
 				},
+				keymap = {
+					fzf = {
+						["tab"] = "down",
+						["shift-tab"] = "up",
+					},
+				},
 			})
 		end,
 	},
