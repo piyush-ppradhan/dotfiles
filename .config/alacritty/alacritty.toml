@@ -3,5 +3,5 @@ background = '#090909'
 foreground = '#ffffff'
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style="Regular"}
-size = 11.3
+normal = { family = "CaskaydiaMono NF", style="Regular"}
+size = 12
