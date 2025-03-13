@@ -16,7 +16,7 @@ return {
 		cmd = { "LspInfo", "LspInstall", "LspStart" },
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			{ "hrsh7th/cmp-nvim-lsp" },
+			-- { "hrsh7th/cmp-nvim-lsp" },
 			{ "saghen/blink.cmp" },
 		},
 		config = function()
