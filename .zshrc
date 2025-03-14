@@ -14,7 +14,6 @@ path+=("$HOME/.juliaup/bin")
 path+=("$HOME/.venv/formatter/bin")
 path+=("$HOME/.local/bin")
 path+=("$HOME/.venv/general/bin/")
-path+=("$HOME/Tools/zig")
 
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/applications"
 
