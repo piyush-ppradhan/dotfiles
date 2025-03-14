@@ -1,7 +1,7 @@
 [colors.primary]
-background = '#090909'
+background = '#000000'
 foreground = '#ffffff'
 
 [font]
-normal = { family = "CaskaydiaMono NF", style="Regular"}
+normal = { family = "Consolas", style="Regular"}
 size = 12

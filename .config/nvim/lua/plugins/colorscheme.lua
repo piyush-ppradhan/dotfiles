@@ -9,5 +9,5 @@ return {
 			})
 			vim.cmd.colorscheme("modus")
 		end
-	}
+	},
 }
