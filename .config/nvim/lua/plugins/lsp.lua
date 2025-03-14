@@ -72,9 +72,9 @@ return {
 
 			require("lspconfig").clangd.setup({ capabilities = capabilities })
 
-			local lua_opts = lsp_zero.nvim_lua_ls()
-			lua_opts.capabilities = capabilities
-			require("lspconfig").lua_ls.setup(lua_opts)
+			-- local lua_opts = lsp_zero.nvim_lua_ls()
+			-- lua_opts.capabilities = capabilities
+			-- require("lspconfig").lua_ls.setup(lua_opts)
 
 			require("lspconfig").julials.setup({
 				julia_env_path = "~/.julia/environments/v1.11",

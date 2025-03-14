@@ -13,7 +13,6 @@ fi
 path+=("$HOME/.juliaup/bin")
 path+=("$HOME/.venv/formatter/bin")
 path+=("$HOME/.local/bin")
-path+=("$HOME/Tools/lua-language-server/bin")
 path+=("$HOME/.venv/general/bin/")
 path+=("$HOME/Tools/zig")
 
