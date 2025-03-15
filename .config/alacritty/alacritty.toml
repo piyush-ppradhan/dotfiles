@@ -1,7 +1,7 @@
 [colors.primary]
 background = '#000000'
-foreground = '#ffffff'
+foreground = '#EBDBB2'
 
 [font]
-normal = { family = "Consolas Nerd Font", style="Regular"}
-size = 18
+normal = { family = "JetBrainsMono Nerd Font", style="Regular"}
+size = 11.5
