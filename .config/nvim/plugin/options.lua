@@ -1,11 +1,9 @@
 vim.opt.guicursor = ""
 vim.opt.termguicolors = true
--- vim.opt.colorcolumn = "79"
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- vim.opt.nu = true
+-- vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.swapfile = false
---vim.opt.cmdheight = 0
 vim.opt.backup = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
