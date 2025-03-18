@@ -44,11 +44,14 @@ alias vim=nvim
 alias pytest="pytest -v"
 alias tmux="tmux -2"
 
+alias jax_env='source ~/.venv/jax_env/bin/activate'
+alias general='source ~/.venv/general/bin/activate'
+
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza --color=always --icons=always"
 fi
 
-alias jax_env='source ~/.venv/jax_env/bin/activate'
-alias general='source ~/.venv/general/bin/activate'
-
-eval "$(zoxide init zsh)"
+if command -v zoxide >/dev/null 2>&1; then
+	eval "$(zoxide init zsh)"
+	alias cd=z
+fi
