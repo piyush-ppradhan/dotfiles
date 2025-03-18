@@ -41,4 +41,7 @@ require("lazy").setup({ import = "plugins" }, {
 			},
 		},
 	},
+	rocks = {
+		hererocks = true,
+	},
 })
