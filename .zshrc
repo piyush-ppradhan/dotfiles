@@ -23,7 +23,7 @@ precmd() { vcs_info }
 #zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
 setopt PROMPT_SUBST
 # PROMPT='%~%f${vcs_info_msg_0_}%f $ '
-PROMPT='%F{#abb826}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f $ '
+PROMPT='%F{#abb826}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f 󰘧 '
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
 if [ -d "/opt/homebrew/bin" ]; then
@@ -55,3 +55,12 @@ if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init zsh)"
 	alias cd=z
 fi
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
