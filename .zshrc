@@ -22,8 +22,8 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 #zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
 setopt PROMPT_SUBST
-#PROMPT='%F{white} %~%f${vcs_info_msg_0_}%f %F{white}$ '
-PROMPT='%~%f${vcs_info_msg_0_}%f $ '
+# PROMPT='%~%f${vcs_info_msg_0_}%f $ '
+PROMPT='%F{#abb826}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f $ '
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
 if [ -d "/opt/homebrew/bin" ]; then
@@ -50,3 +50,5 @@ fi
 
 alias jax_env='source ~/.venv/jax_env/bin/activate'
 alias general='source ~/.venv/general/bin/activate'
+
+eval "$(zoxide init zsh)"
