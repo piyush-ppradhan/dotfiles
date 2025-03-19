@@ -3,5 +3,5 @@ background = '#000000'
 foreground = '#EBDBB2'
 
 [font]
-normal = { family = "IosevkaTerm Nerd Font", style="Regular"}
-size = 18
+normal = { family = "IosevkaTerm", style="Regular"}
+size = 13.3

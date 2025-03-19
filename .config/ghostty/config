@@ -1,0 +1,5 @@
+font-family = "IosevkaTerm"
+font-size = 13.2
+shell-integration-features = sudo
+theme = GruvboxDarkHard
+background = #000000

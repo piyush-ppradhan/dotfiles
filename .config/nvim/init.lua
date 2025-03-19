@@ -11,6 +11,9 @@ vim.api.nvim_set_hl(0, "StatusLineNC", { fg = "#62584e", bg = "None" })
 vim.api.nvim_set_hl(0, "Identifier", { fg = "#ebdbb2", bg = "None" })
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#303030", bg = "None" })
 vim.api.nvim_set_hl(0, "Comment", { fg = "#928374", italic = true })
+vim.api.nvim_set_hl(0, "DiagnosticError", { fg = "#ff0000", bg = "#222222" })
+vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = "#fabd2f", bg = "#222222" })
+vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = "#928374", undercurl = true, sp = "#fabd2f" })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
