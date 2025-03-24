@@ -5,8 +5,7 @@ vim.g.mapleader = " "
 vim.cmd.colorscheme("retrobox")
 vim.api.nvim_set_hl(0, "Normal", { fg = "#ebdbb2", bg = "None" })
 vim.api.nvim_set_hl(0, "NormalNC", { fg = "#ebdbb2", bg = "None" })
-vim.api.nvim_set_hl(0, "SignColumn", { bg = "None" })
-vim.api.nvim_set_hl(0, "StatusLine", { fg = "#62584e", bg = "None" })
+vim.api.nvim_set_hl(0, "StatusLine", { fg = "#62584e", bg = "None", bold = true })
 vim.api.nvim_set_hl(0, "StatusLineNC", { fg = "#62584e", bg = "None" })
 vim.api.nvim_set_hl(0, "Identifier", { fg = "#ebdbb2", bg = "None" })
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#303030", bg = "None" })
@@ -14,6 +13,9 @@ vim.api.nvim_set_hl(0, "Comment", { fg = "#928374", italic = true })
 vim.api.nvim_set_hl(0, "DiagnosticError", { fg = "#ff0000", bg = "#222222" })
 vim.api.nvim_set_hl(0, "DiagnosticWarn", { fg = "#fabd2f", bg = "#222222" })
 vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = "#928374", undercurl = true, sp = "#fabd2f" })
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "None" })
+vim.api.nvim_set_hl(0, "DiagnosticSignError", { fg = "#ff0000", bg = "None" })
+vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { fg = "#ff0000", bg = "None" })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
