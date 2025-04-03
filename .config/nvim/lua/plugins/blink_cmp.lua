@@ -11,7 +11,7 @@ return {
 				["<C-p>"] = { "select_prev" },
 				["<C-n>"] = { "select_next" },
 				["<C-y>"] = { "accept" },
-				["<C-Space>"] = { "show" }
+				["<C-Space>"] = { "show" },
 			},
 			appearance = {
 				use_nvim_cmp_as_default = true, -- Mimics nvim-cmp's behavior
@@ -19,7 +19,7 @@ return {
 			},
 			fuzzy = { implementation = "prefer_rust_with_warning" },
 			sources = {
-				default = { 'lsp', 'buffer', 'snippets', 'path' }
+				default = { "lsp", "buffer", "snippets", "path" },
 			},
 		},
 	},

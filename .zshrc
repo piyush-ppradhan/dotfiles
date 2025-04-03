@@ -14,8 +14,6 @@ path+=("$HOME/.juliaup/bin")
 path+=("$HOME/.venv/formatter/bin")
 path+=("$HOME/.local/bin")
 path+=("$HOME/.venv/general/bin/")
-path+=("$HOME/Tools/lua-language-server/bin")
-path+=("$HOME/Tools/zig")
 
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/applications"
 
@@ -41,7 +39,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias pip='uv pip'
-alias vim=nvim
 alias pytest="pytest -v"
 alias tmux="tmux -2"
 
@@ -68,3 +65,4 @@ function y() {
 
 eval "$(starship init zsh)"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"

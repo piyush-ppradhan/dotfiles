@@ -104,5 +104,5 @@ return {
 		end
 
 		-- require("nvim-dap-virtual-text").setup()
-	end
+	end,
 }
