@@ -6,6 +6,7 @@ vim.api.nvim_set_hl(0, "Identifier", { fg = "#e8d9a6" })
 vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "None" })
 vim.api.nvim_set_hl(0, "SignColumn", { bg = "None" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#333333", bg = "None" })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then

@@ -66,3 +66,17 @@ function y() {
 eval "$(starship init zsh)"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/pradhan/.opam/opam-init/init.zsh' ]] || source '/home/pradhan/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+#
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=1000000000
+export SAVEHIST=1000000000
+setopt EXTENDED_HISTORY
