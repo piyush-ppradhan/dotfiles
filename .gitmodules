@@ -7,6 +7,3 @@
 [submodule ".config/tmux/plugins/tmux-yank"]
 	path = .config/tmux/plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh
