@@ -2,7 +2,7 @@ vim.loader.enable()
 vim.g.mapleader = " "
 
 vim.cmd.colorscheme("retrobox")
-vim.api.nvim_set_hl(0, "Identifier", { fg = "#e8d9a6" })
+vim.api.nvim_set_hl(0, "Identifier", { fg = "#e8dbb0" })
 vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "None" })
 vim.api.nvim_set_hl(0, "SignColumn", { bg = "None" })
