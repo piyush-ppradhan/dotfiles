@@ -36,7 +36,7 @@ return {
 					if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
 						return
 					end
-					return { lsp_fallback = true } -- This handles the python formatting as ruff is formatter and linter only
+					return { lsp_fallback = false } -- This handles the python formatting as ruff is formatter and linter only
 				end,
 			})
 

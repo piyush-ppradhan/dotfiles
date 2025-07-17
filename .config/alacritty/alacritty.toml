@@ -1,6 +1,6 @@
 [font]
-normal = { family = "Consolas Nerd Font"}
-size = 11.6
+normal = { family = "Consolas Nerd Font Mono"}
+size = 13
 
 [colors.primary]
 background = "#050505"
