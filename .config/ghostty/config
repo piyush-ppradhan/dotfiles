@@ -1,0 +1,5 @@
+font-size = 12.0
+font-family = "ComicCodeLigatures Nerd Font"
+theme = "rose-pine-moon"
+background = #050505
+custom-shader = /home/pradhan/Tools/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix.glsl

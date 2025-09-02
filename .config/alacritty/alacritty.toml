@@ -1,9 +1,0 @@
-[font]
-normal = { family = "JetBrainsMono Nerd Font"}
-size = 11.3
-
-[colors.primary]
-background = "#041010"
-
-[window]
-opacity = 0.98
