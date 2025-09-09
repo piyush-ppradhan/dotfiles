@@ -4,6 +4,7 @@ vim.opt.guicursor = ""
 vim.opt.termguicolors = true
 -- vim.opt.nu = true
 -- vim.opt.relativenumber = true
+vim.opt.signcolumn = "no"
 vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -53,21 +54,6 @@ require("lazy").setup({ import = "plugins" }, {
 	},
 })
 
--- vim.diagnostic.config({
--- 	-- enable signs and customize their text per severity
--- 	signs = {
--- 		text = {
--- 			[vim.diagnostic.severity.ERROR] = "",
--- 			[vim.diagnostic.severity.WARN] = "",
--- 			[vim.diagnostic.severity.HINT] = "",
--- 			[vim.diagnostic.severity.INFO] = "",
--- 		},
--- 	},
--- 	virtual_text = true,
--- 	underline = true,
--- 	severity_sort = true,
--- })
-
 vim.diagnostic.config({
 	-- enable signs and customize their text per severity
 	signs = {
@@ -78,7 +64,45 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "I",
 		},
 	},
-	virtual_text = true,
-	underline = true,
+	virtual_text = false,
+	underline = false,
 	severity_sort = true,
+})
+
+-- Autoclear the command line
+local grp_ = vim.api.nvim_create_augroup("ClearCmdLine", { clear = true })
+vim.api.nvim_create_autocmd("CmdlineLeave", {
+	group = grp_,
+	callback = function()
+		vim.fn.timer_start(1000, function()
+			vim.cmd("echon ' '")
+		end)
+	end,
+})
+
+function _G.git_branch()
+	local handle = io.popen("git -C " .. vim.fn.expand("%:p:h") .. " rev-parse --abbrev-ref HEAD 2>/dev/null")
+	if handle == nil then
+		return ""
+	end
+	local result = handle:read("*a") or ""
+	handle:close()
+	result = result:gsub("%s+", "")
+	if result ~= "" then
+		return result
+	else
+		return ""
+	end
+end
+
+vim.o.statusline = table.concat({
+	"%p%%", -- percentage
+	" L%l", -- line:col
+	"  git: %{v:lua.git_branch()}", -- Git branch
+	"  %y", -- filetype
+	"  %f", -- file name
+	" %m", -- modified flag
+	" %r", -- readonly flag
+	" %h", -- help flag
+	" %w", -- preview flag
 })

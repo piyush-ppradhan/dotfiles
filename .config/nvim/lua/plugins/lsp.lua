@@ -19,7 +19,6 @@ return {
 			{ "saghen/blink.cmp" },
 		},
 		config = function()
-			vim.diagnostic.config({ virtual_text = true })
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lsp_zero = require("lsp-zero")
 			lsp_zero.extend_lspconfig()
