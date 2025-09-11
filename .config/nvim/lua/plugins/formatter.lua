@@ -11,6 +11,7 @@ return {
 					c = { "clang-format" },
 					cpp = { "clang-format" },
 					julia = { "JuliaLanguagerServer" },
+					odin = { "odinfmt" },
 				},
 				format_on_save = function(bufnr)
 					-- Disable autoformat on certain filetypes

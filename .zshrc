@@ -15,7 +15,8 @@ path+=("$HOME/.venv/formatter/bin")
 path+=("$HOME/.local/bin")
 path+=("$HOME/.venv/general/bin/")
 path+=("$HOME/Tools/go/bin")
-path+=("$HOME/Tools/zig")
+path+=("$HOME/Tools/Odin")
+path+=("$HOME/Tools/ols")
 
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/applications"
 

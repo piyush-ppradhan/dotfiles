@@ -104,6 +104,10 @@ return {
 				},
 				capabilities = capabilities,
 			})
+
+			require("lspconfig").ols.setup({
+				capabilities = capabilities,
+			})
 		end,
 	},
 }
