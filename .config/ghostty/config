@@ -1,7 +1,6 @@
-font-size = 11.5
-font-family = "ComicCodeLigatures Nerd Font"
-# font-family = "Cousine Nerd Font Mono"
-theme = "GruvboxDarkHard"
-background = #000000
-cursor-color = #98cbaa
-# custom-shader = /home/pradhan/Tools/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix.glsl
+# font-size = 11.5
+# font-family = "ComicCode Ligatures Nerd Font"
+font-size = 13.7
+font-family = "Consolas Nerd Font"
+theme = "xcodedarkhc"
+background = #050505

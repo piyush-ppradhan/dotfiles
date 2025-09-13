@@ -12,7 +12,7 @@ return {
 
 			local actions = require("fzf-lua").actions
 			require("fzf-lua").setup({
-				files = { previewer = false },
+				-- files = { previewer = false },
 				actions = {
 					files = {
 						["default"] = actions.file_edit,

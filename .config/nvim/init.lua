@@ -65,6 +65,10 @@ vim.diagnostic.config({
 		},
 	},
 	virtual_text = false,
+	-- virtual_lines = {
+	-- 	current_line = false,
+	-- },
+	virtual_lines = false,
 	underline = false,
 	severity_sort = true,
 })
@@ -106,3 +110,5 @@ vim.o.statusline = table.concat({
 	" %h", -- help flag
 	" %w", -- preview flag
 })
+
+vim.cmd.colorscheme("boost")
