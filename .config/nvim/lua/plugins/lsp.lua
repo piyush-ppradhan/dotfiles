@@ -1,11 +1,17 @@
 vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", build = "cargo build --release" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
 })
 
 require("blink.cmp").setup({
 	keymap = {
 		preset = "default",
+		["<Up>"] = { "select_prev", "fallback" },
+		["<Down>"] = { "select_next", "fallback" },
+		["<C-p>"] = { "select_prev" },
+		["<C-n>"] = { "select_next" },
+		["<C-y>"] = { "accept" },
 	},
 	completion = {
 		menu = {
@@ -156,6 +162,6 @@ vim.diagnostic.config({
 	-- 	current_line = false,
 	-- },
 	virtual_lines = false,
-	underline = false,
+	underline = true,
 	severity_sort = true,
 })
