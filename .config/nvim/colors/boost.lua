@@ -11,13 +11,13 @@ if transparent then
 	vim.api.nvim_set_hl(0, "Constant", { bg = "None", fg = "#c0d4b1" })
 	vim.api.nvim_set_hl(0, "Delimiter", { bg = "None", fg = "#d0d0d0" })
 	vim.api.nvim_set_hl(0, "Float", { bg = "None", fg = "#c0d4b1" })
-	vim.api.nvim_set_hl(0, "Function", { bg = "None", fg = "#ff8000", bold = true })
+	vim.api.nvim_set_hl(0, "Function", { bg = "None", fg = "#ff8301", bold = true })
 	vim.api.nvim_set_hl(0, "Identifier", { bg = "None", fg = "#ccca88" })
 	vim.api.nvim_set_hl(0, "IncSearch", { bg = "#fce094", fg = "#312d24" })
 	vim.api.nvim_set_hl(0, "Keyword", { bg = "None", fg = "#cca0df" })
 	vim.api.nvim_set_hl(0, "LineNr", { bg = "None", fg = "#222222" })
 	vim.api.nvim_set_hl(0, "Normal", { bg = "None", fg = "#ececec" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#101010", fg = "#b67464" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#101010", fg = "#dcdcdc" })
 	vim.api.nvim_set_hl(0, "Operator", { bg = "None", fg = "#cca0df", bold = true })
 	vim.api.nvim_set_hl(0, "Special", { bg = "None", fg = "#ccca88" })
 	vim.api.nvim_set_hl(0, "StatusLine", { bg = "None", fg = "#aaaaaa", bold = true })
@@ -58,8 +58,8 @@ if transparent then
 
 	-- Python
 	vim.api.nvim_set_hl(0, "@attribute.python", { bg = "None", fg = "#ff4154", bold = true })
-	vim.api.nvim_set_hl(0, "@function.method.python", { bg = "None", fg = "#ff8000", bold = true })
-	vim.api.nvim_set_hl(0, "@function.method.call.python", { bg = "None", fg = "#ff8000", italic = true })
+	vim.api.nvim_set_hl(0, "@function.method.python", { bg = "None", fg = "#ff8301", bold = true })
+	vim.api.nvim_set_hl(0, "@function.method.call.python", { bg = "None", fg = "#ff8301", italic = true })
 	vim.api.nvim_set_hl(0, "@string.documentation.python", { bg = "None", fg = "#666666", italic = true })
 	vim.api.nvim_set_hl(0, "@variable.python", { bg = "None", fg = "#ececec" })
 
@@ -76,13 +76,13 @@ else
 	vim.api.nvim_set_hl(0, "Constant", { bg = background, fg = "#c0d4b1" })
 	vim.api.nvim_set_hl(0, "Delimiter", { bg = background, fg = "#d0d0d0" })
 	vim.api.nvim_set_hl(0, "Float", { bg = background, fg = "#c0d4b1" })
-	vim.api.nvim_set_hl(0, "Function", { bg = background, fg = "ff8000", bold = true })
+	vim.api.nvim_set_hl(0, "Function", { bg = background, fg = "#ff8301", bold = true })
 	vim.api.nvim_set_hl(0, "Identifier", { bg = background, fg = "#ccca88" })
 	vim.api.nvim_set_hl(0, "IncSearch", { bg = "#fce094", fg = "#312d24" })
 	vim.api.nvim_set_hl(0, "Keyword", { bg = background, fg = "#cca0df" })
 	vim.api.nvim_set_hl(0, "LineNr", { bg = background, fg = "#222222" })
 	vim.api.nvim_set_hl(0, "Normal", { bg = background, fg = "#ececec" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#101010", fg = "#b67464" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#101010", fg = "#dcdcdc" })
 	vim.api.nvim_set_hl(0, "Operator", { bg = background, fg = "#cca0df", bold = true })
 	vim.api.nvim_set_hl(0, "Special", { bg = background, fg = "#ccca88" })
 	vim.api.nvim_set_hl(0, "StatusLine", { bg = background, fg = "#aaaaaa", bold = true })
@@ -123,8 +123,8 @@ else
 
 	-- Python
 	vim.api.nvim_set_hl(0, "@attribute.python", { bg = background, fg = "#ff4154", bold = true })
-	vim.api.nvim_set_hl(0, "@function.method.python", { bg = background, fg = "#ff8000", bold = true })
-	vim.api.nvim_set_hl(0, "@function.method.call.python", { bg = background, fg = "#ff8000", italic = true })
+	vim.api.nvim_set_hl(0, "@function.method.python", { bg = background, fg = "#ff8301", bold = true })
+	vim.api.nvim_set_hl(0, "@function.method.call.python", { bg = background, fg = "#ff8301", italic = true })
 	vim.api.nvim_set_hl(0, "@string.documentation.python", { bg = background, fg = "#666666", italic = true })
 	vim.api.nvim_set_hl(0, "@variable.python", { bg = background, fg = "#ececec" })
 

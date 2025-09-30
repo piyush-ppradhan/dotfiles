@@ -21,6 +21,8 @@ vim.opt.shiftwidth = 4
 vim.opt.fillchars = { eob = " " }
 vim.opt.winborder = "rounded"
 vim.opt.completeopt = { "noselect" }
+vim.opt.shortmess:append("sI")
+vim.cmd("set path+=src/**")
 vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
 
-vim.cmd.colorscheme("boost")
+-- vim.cmd.colorscheme("boost")
