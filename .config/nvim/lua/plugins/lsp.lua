@@ -26,7 +26,7 @@ require("blink.cmp").setup({
 	},
 	fuzzy = {
 		implementation = "lua",
-		prebuilt_binaries = { force_version = "1.*" },
+		-- prebuilt_binaries = { force_version = "1.*" },
 	},
 })
 

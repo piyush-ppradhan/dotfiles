@@ -1,0 +1,25 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "f24111c"
+    },
+    "conform.nvim": {
+      "rev": "fbcb4fa"
+    },
+    "fzf-lua": {
+      "rev": "83e4080",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "julia-vim": [],
+    "nvim-lspconfig": {
+      "rev": "ac98db2"
+    },
+    "nvim-web-devicons": [],
+    "oil.nvim": {
+      "rev": "7194872"
+    },
+    "snacks.nvim": {
+      "rev": "454ba02"
+    }
+  }
+}

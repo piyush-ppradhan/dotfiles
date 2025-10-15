@@ -25,4 +25,4 @@ vim.opt.shortmess:append("sI")
 vim.cmd("set path+=src/**")
 vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
 
--- vim.cmd.colorscheme("boost")
+vim.cmd.colorscheme("default_vim")

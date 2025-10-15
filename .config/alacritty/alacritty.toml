@@ -1,11 +1,8 @@
 [font]
-# normal = { family = "ComicCodeLigatures Nerd Font" }
-# size = 11.1
-# offset = { x = 0, y = -1 }
-normal = { family = "JetBrainsMono Nerd Font" }
-size = 11.3
-offset = { y = -1 }
+normal = { family = "Consolas Nerd Font" }
+size = 13
 
 [colors.primary]
-background = "#101010"
+background = "#050505"
+foreground = "#fafafa"
 
