@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "f24111c"
+      "rev": "cb87357"
     },
     "conform.nvim": {
       "rev": "fbcb4fa"
@@ -10,7 +10,15 @@
       "rev": "83e4080",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
+    "gruber-darker.nvim": {
+      "rev": "d9d858d",
+      "src": "https://github.com/blazkowolf/gruber-darker.nvim"
+    },
     "julia-vim": [],
+    "nvim-autopairs": {
+      "rev": "7a2c97c",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
     "nvim-lspconfig": {
       "rev": "ac98db2"
     },

@@ -157,7 +157,7 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "I",
 		},
 	},
-	virtual_text = false,
+	virtual_text = true,
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },

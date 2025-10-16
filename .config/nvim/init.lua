@@ -2,6 +2,7 @@ require("config.globals")
 require("config.clear_cmdline")
 require("config.statusline")
 
+require("plugins.auto-pairs")
 require("plugins.conform")
 require("plugins.colorscheme")
 require("plugins.devicons")
