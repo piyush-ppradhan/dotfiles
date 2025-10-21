@@ -1,18 +1,18 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "cb87357"
+      "rev": "2cb0a71"
     },
     "conform.nvim": {
       "rev": "fbcb4fa"
     },
     "fzf-lua": {
-      "rev": "83e4080",
+      "rev": "c102a4e",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
-    "gruber-darker.nvim": {
-      "rev": "d9d858d",
-      "src": "https://github.com/blazkowolf/gruber-darker.nvim"
+    "gruvbox.nvim": {
+      "rev": "5e0a460",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
     "julia-vim": [],
     "nvim-autopairs": {
@@ -24,7 +24,7 @@
     },
     "nvim-web-devicons": [],
     "oil.nvim": {
-      "rev": "7194872"
+      "rev": "7e1cd77"
     },
     "snacks.nvim": {
       "rev": "454ba02"
