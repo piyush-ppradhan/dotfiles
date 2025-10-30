@@ -2,6 +2,7 @@ vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", build = "cargo build --release" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
+	{ src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 })
 
 require("blink.cmp").setup({
@@ -147,17 +148,27 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+require("tiny-inline-diagnostic").setup({
+	preset = "simple",
+})
+
+vim.cmd("hi SignColumn guibg=None")
+
 vim.diagnostic.config({
 	-- enable signs and customize their text per severity
 	signs = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = "E",
-			[vim.diagnostic.severity.WARN] = "W",
-			[vim.diagnostic.severity.HINT] = "H",
-			[vim.diagnostic.severity.INFO] = "I",
+			-- [vim.diagnostic.severity.ERROR] = "E",
+			-- [vim.diagnostic.severity.WARN] = "W",
+			-- [vim.diagnostic.severity.HINT] = "H",
+			-- [vim.diagnostic.severity.INFO] = "I",
+			[vim.diagnostic.severity.ERROR] = "●",
+			[vim.diagnostic.severity.WARN] = "●",
+			[vim.diagnostic.severity.HINT] = "●",
+			[vim.diagnostic.severity.INFO] = "●",
 		},
 	},
-	virtual_text = true,
+	virtual_text = false, -- needed for tiny-inline-diagnostic
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },

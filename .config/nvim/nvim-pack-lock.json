@@ -1,14 +1,18 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "2cb0a71"
+      "rev": "afc4f4d"
     },
     "conform.nvim": {
-      "rev": "fbcb4fa"
+      "rev": "9fd3d5e"
     },
     "fzf-lua": {
-      "rev": "c102a4e",
+      "rev": "a8458b7",
       "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "gruvbox": {
+      "rev": "697c002",
+      "src": "https://github.com/morhetz/gruvbox"
     },
     "gruvbox.nvim": {
       "rev": "5e0a460",
@@ -20,14 +24,24 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-lspconfig": {
-      "rev": "ac98db2"
+      "rev": "87d3018"
     },
-    "nvim-web-devicons": [],
+    "nvim-treesitter": {
+      "rev": "42fc28ba",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "8dcb311"
+    },
     "oil.nvim": {
       "rev": "7e1cd77"
     },
     "snacks.nvim": {
       "rev": "454ba02"
+    },
+    "tiny-inline-diagnostic.nvim": {
+      "rev": "994c13d",
+      "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     }
   }
 }
