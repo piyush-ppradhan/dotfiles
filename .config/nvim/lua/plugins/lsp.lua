@@ -90,8 +90,12 @@ vim.lsp.config("ruff", {
 	capabilities = capabilities,
 })
 
+-- vim.lsp.config("ty", {
+-- 	capabilities = capabilities,
+-- })
+-- vim.lsp.enable({ "clangd", "julials", "lua_ls", "ruff", "ty" })
+
 vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
--------------------------------------------------------------------
 
 -- vim.api.nvim_create_autocmd("LspAttach", {
 -- 	group = vim.api.nvim_create_augroup("my.lsp", {}),
