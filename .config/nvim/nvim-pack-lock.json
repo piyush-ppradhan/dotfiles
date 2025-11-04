@@ -1,30 +1,34 @@
 {
   "plugins": {
+    "anysphere-dark.nvim": {
+      "rev": "9ac0126",
+      "src": "https://github.com/wkflanders/anysphere-dark.nvim"
+    },
     "blink.cmp": {
-      "rev": "afc4f4d"
+      "rev": "2408f14"
     },
     "conform.nvim": {
-      "rev": "9fd3d5e"
+      "rev": "26c02e1"
     },
     "fzf-lua": {
       "rev": "a8458b7",
       "src": "https://github.com/ibhagwan/fzf-lua"
-    },
-    "gruvbox": {
-      "rev": "697c002",
-      "src": "https://github.com/morhetz/gruvbox"
     },
     "gruvbox.nvim": {
       "rev": "5e0a460",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
     "julia-vim": [],
+    "neovim": {
+      "rev": "72a04c4",
+      "src": "https://github.com/rose-pine/neovim"
+    },
     "nvim-autopairs": {
       "rev": "7a2c97c",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-lspconfig": {
-      "rev": "87d3018"
+      "rev": "2010fc6"
     },
     "nvim-treesitter": {
       "rev": "42fc28ba",
