@@ -1,9 +1,5 @@
 {
   "plugins": {
-    "anysphere-dark.nvim": {
-      "rev": "9ac0126",
-      "src": "https://github.com/wkflanders/anysphere-dark.nvim"
-    },
     "blink.cmp": {
       "rev": "2408f14"
     },
@@ -14,9 +10,9 @@
       "rev": "a8458b7",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
-    "gruvbox.nvim": {
-      "rev": "5e0a460",
-      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    "gruvbox-material": {
+      "rev": "834dbf2",
+      "src": "https://github.com/sainnhe/gruvbox-material"
     },
     "julia-vim": [],
     "neovim": {

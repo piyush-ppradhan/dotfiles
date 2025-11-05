@@ -1,7 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/rose-pine/neovim" },
-	{ src = "https://github.com/ellisonleao/gruvbox.nvim" },
-	{ src = "https://github.com/wkflanders/anysphere-dark.nvim" },
+	{ src = "https://github.com/sainnhe/gruvbox-material" },
 })
 
 require("rose-pine").setup({
@@ -17,22 +16,12 @@ require("rose-pine").setup({
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "None", fg = "#e0def4" })
 -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "None", fg = "#e0def4" })
 
-require("gruvbox").setup({
-	terminal_colors = true, -- add neovim terminal colors
-	undercurl = true,
-	underline = true,
-	bold = true,
-	italic = {
-		strings = false,
-		emphasis = false,
-		comments = true,
-		operators = false,
-		folds = true,
-	},
-	contrast = "hard",
-	transparent_mode = true,
-})
-vim.cmd.colorscheme("gruvbox")
-
-vim.cmd.colorscheme("anysphere")
-vim.api.nvim_set_hl(0, "Normal", { bg = "None", fg = "#d6d6dd" })
+vim.g.gruvbox_material_foreground = "original"
+vim.g.gruvbox_material_enable_bold = "1"
+vim.g.gruvbox_material_enable_italic = "1"
+vim.g.gruvbox_material_transparent_background = "1"
+vim.g.gruvbox_material_dim_inactive_windows = "1"
+vim.g.gruvbox_material_ui_contrast = "hard"
+vim.g.gruvbox_material_better_performance = "1"
+vim.cmd.colorscheme("gruvbox-material")
+vim.api.nvim_set_hl(0, "WinSeparator", { bg = "None", fg = "#45403d" })
