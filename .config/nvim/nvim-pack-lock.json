@@ -1,46 +1,51 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "2408f14"
+      "rev": "74967d4f9e6bffd4f707493917503e9d9c73e92c",
+      "src": "https://github.com/saghen/blink.cmp"
     },
     "conform.nvim": {
-      "rev": "26c02e1"
+      "rev": "afce105eb47b0869dfafdac90d82f02ef2419d61",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "darksphere.nvim": {
+      "rev": "a9f7e56",
+      "src": "https://github.com/petronny/darksphere.nvim"
     },
     "fzf-lua": {
-      "rev": "a8458b7",
+      "rev": "c926a87e975f81e49cd5f8c639f1d24e029fa9f6",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gruvbox-material": {
-      "rev": "834dbf2",
+      "rev": "4bfc698",
       "src": "https://github.com/sainnhe/gruvbox-material"
     },
-    "julia-vim": [],
-    "neovim": {
-      "rev": "72a04c4",
-      "src": "https://github.com/rose-pine/neovim"
+    "julia-vim": {
+      "rev": "7946ce330b6287c9293aece5b14feafa1125779e",
+      "src": "https://github.com/JuliaEditorSupport/julia-vim"
     },
     "nvim-autopairs": {
-      "rev": "7a2c97c",
+      "rev": "7a2c97cccd60abc559344042fefb1d5a85b3e33b",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-lspconfig": {
-      "rev": "2010fc6"
+      "rev": "30a2b191bccf541ce1797946324c9329e90ec448",
+      "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
-      "rev": "42fc28ba",
+      "rev": "42fc28ba918343ebfd5565147a42a26580579482",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "8dcb311"
+      "rev": "8dcb311b0c92d460fac00eac706abd43d94d68af",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "7e1cd77"
-    },
-    "snacks.nvim": {
-      "rev": "454ba02"
+      "rev": "01cb3a8ad7d5e8707041edc775af83dbf33838f4",
+      "src": "https://github.com/stevearc/oil.nvim"
     },
     "tiny-inline-diagnostic.nvim": {
-      "rev": "994c13d",
+      "rev": "71f998696a4d63a1fa42a6c70d5931a2001e485b",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     }
   }

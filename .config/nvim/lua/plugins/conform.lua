@@ -8,8 +8,14 @@ require("conform").setup({
 		-- python = { "ruff" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
-		julia = { "JuliaLanguagerServer" },
+		julia = { "runic" },
 		rust = { "rustfmt" },
+	},
+	formatters = {
+		runic = {
+			command = "julia",
+			args = { "--project=@runic", "--startup-file=no", "-e", "using Runic; exit(Runic.main(ARGS))" },
+		},
 	},
 	format_on_save = function(bufnr)
 		-- Disable autoformat on certain filetypes

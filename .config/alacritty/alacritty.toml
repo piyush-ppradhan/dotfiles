@@ -1,8 +1,0 @@
-[font]
-normal = { family = "Consolas Nerd Font" }
-size = 13
-
-[colors.primary]
-background = "#050505"
-foreground = "#fafafa"
-
