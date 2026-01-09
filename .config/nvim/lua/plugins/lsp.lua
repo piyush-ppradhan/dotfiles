@@ -154,6 +154,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 require("tiny-inline-diagnostic").setup({
 	preset = "simple",
+	options = {
+		multilines = {
+			enabled = true,
+		},
+	},
 })
 
 vim.cmd("hi SignColumn guibg=None")
@@ -177,6 +182,6 @@ vim.diagnostic.config({
 	-- 	current_line = false,
 	-- },
 	virtual_lines = false,
-	underline = true,
+	underline = false,
 	severity_sort = true,
 })

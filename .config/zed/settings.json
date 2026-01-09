@@ -3,50 +3,53 @@
   "buffer_font_size": 16,
   "scrollbar": {
     "diagnostics": "none",
-    "show": "never"
+    "show": "never",
   },
   "buffer_line_height": "standard",
   "current_line_highlight": "none",
   "git": {
     "git_gutter": "hide",
-    "inline_blame": { "enabled": false }
+    "inline_blame": { "enabled": false },
   },
-  "agent": {
-    "button": false
+  "diagnostics": {
+    "inline": { "enabled": true },
   },
+  // "agent": {
+  //   "button": false,
+  // },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "inline_code_actions": false,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Gruvbox Dark Hard",
   },
   "gutter": {
     "line_numbers": false,
-    "folds": false
+    "folds": false,
   },
   "indent_guides": {
-    "enabled": false
+    "enabled": false,
   },
-  "buffer_font_family": "FragmentMono Nerd Font",
-  "ui_font_family": "FragmentMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "JetBrainsMono Nerd Font",
   "toolbar": {
     "breadcrumbs": false,
     "agent_review": false,
     "code_actions": false,
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "languages": {
     "Python": {
-      "language_servers": ["!basedpyright", "pyright", "ruff"]
-    }
+      "language_servers": ["!basedpyright", "pyright", "ruff"],
+    },
   },
   "vim_mode": true,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
-  }
+    "metrics": false,
+  },
 }

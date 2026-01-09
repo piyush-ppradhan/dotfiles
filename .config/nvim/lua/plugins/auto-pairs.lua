@@ -1,5 +1,5 @@
 vim.pack.add({
-	{ src = "https://github.com/windwp/nvim-autopairs" },
+	{ src = "https://github.com/nvim-mini/mini.pairs" },
 })
 
-require("nvim-autopairs").setup({})
+require("mini.pairs").setup()
