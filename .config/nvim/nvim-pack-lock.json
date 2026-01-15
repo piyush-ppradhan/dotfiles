@@ -1,15 +1,15 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "6a4914ca987453464a7dfc7fc237a992adb567d0",
+      "rev": "b1b77404ce3c8b11e8f35611a28176b944c41e29",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "conform.nvim": {
-      "rev": "8314f4c9e205e7f30b62147069729f9a1227d8bf",
+      "rev": "238f542a118984a88124fc915d5b981680418707",
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "fzf-lua": {
-      "rev": "a03d68e40eea835a1cdbd9f93049708dab3621e6",
+      "rev": "578a11f9f7c5f4436b833731ccceeda9479562f0",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gruvbox-material": {
@@ -17,16 +17,8 @@
       "src": "https://github.com/sainnhe/gruvbox-material"
     },
     "julia-vim": {
-      "rev": "50efcc1c54079ed7f596fab0daeac354c252670e",
+      "rev": "edd3512748bd07252fa79f3c01b759921192a319",
       "src": "https://github.com/JuliaEditorSupport/julia-vim"
-    },
-    "mini.base16": {
-      "rev": "852a1ab7700dd5ca56ec94232ea7bc2d6158662a",
-      "src": "https://github.com/nvim-mini/mini.base16"
-    },
-    "mini.pairs": {
-      "rev": "d5a29b6254dad07757832db505ea5aeab9aad43a",
-      "src": "https://github.com/nvim-mini/mini.pairs"
     },
     "nvim-lspconfig": {
       "rev": "92ee7d42320edfbb81f3cad851314ab197fa324a",
@@ -37,16 +29,12 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
+      "rev": "803353450c374192393f5387b6a0176d0972b848",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
+      "rev": "6b59a6cf623fa2245c7454ddb458df5bdb6615d3",
       "src": "https://github.com/stevearc/oil.nvim"
-    },
-    "tiny-inline-diagnostic.nvim": {
-      "rev": "c7b1488ad0b389763c34bd17a6264424b3da5a52",
-      "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     }
   }
 }

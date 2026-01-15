@@ -4,6 +4,7 @@ vim.opt.guicursor = ""
 vim.opt.termguicolors = true
 -- vim.opt.nu = true
 -- vim.opt.relativenumber = true
+-- vim.opt.cursorline = true
 vim.opt.signcolumn = "no"
 vim.opt.wrap = false
 vim.opt.swapfile = false

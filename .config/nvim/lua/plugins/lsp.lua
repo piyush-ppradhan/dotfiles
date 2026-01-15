@@ -1,41 +1,40 @@
 vim.pack.add({
-	{ src = "https://github.com/saghen/blink.cmp", build = "cargo build --release" },
+	-- { src = "https://github.com/saghen/blink.cmp", build = "cargo build --release" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
-	{ src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 })
 
-require("blink.cmp").setup({
-	keymap = {
-		preset = "default",
-		["<Up>"] = { "select_prev", "fallback" },
-		["<Down>"] = { "select_next", "fallback" },
-		["<C-p>"] = { "select_prev" },
-		["<C-n>"] = { "select_next" },
-		["<C-y>"] = { "accept" },
-	},
-	completion = {
-		menu = {
-			border = "rounded",
-		},
-		documentation = {
-			auto_show = true,
-		},
-	},
-	sources = {
-		default = { "lsp", "path", "buffer" },
-	},
-	fuzzy = {
-		implementation = "lua",
-		-- prebuilt_binaries = { force_version = "1.*" },
-	},
-})
+-- require("blink.cmp").setup({
+-- 	keymap = {
+-- 		preset = "default",
+-- 		["<Up>"] = { "select_prev", "fallback" },
+-- 		["<Down>"] = { "select_next", "fallback" },
+-- 		["<C-p>"] = { "select_prev" },
+-- 		["<C-n>"] = { "select_next" },
+-- 		["<C-y>"] = { "accept" },
+-- 	},
+-- 	completion = {
+-- 		menu = {
+-- 			border = "rounded",
+-- 		},
+-- 		documentation = {
+-- 			auto_show = true,
+-- 		},
+-- 	},
+-- 	sources = {
+-- 		default = { "lsp", "path", "buffer" },
+-- 	},
+-- 	fuzzy = {
+-- 		implementation = "lua",
+-- 		-- prebuilt_binaries = { force_version = "1.*" },
+-- 	},
+-- })
 
 -- LSP Config
-local capabilities = require("blink.cmp").get_lsp_capabilities()
+-- local capabilities = require("blink.cmp").get_lsp_capabilities()
 vim.lsp.config("julials", {
 	julia_env_path = "~/.julia/environments/v1.11",
-	capabilities = capabilities,
+	-- capabilities = capabilities,
 })
 
 vim.lsp.config("lua_ls", {
@@ -58,7 +57,7 @@ vim.lsp.config("lua_ls", {
 			},
 		},
 	},
-	capabilities = capabilities,
+	-- capabilities = capabilities,
 })
 
 vim.lsp.config("pyright", {
@@ -76,7 +75,7 @@ vim.lsp.config("pyright", {
 			},
 		},
 	},
-	capabilities = capabilities,
+	-- capabilities = capabilities,
 })
 
 vim.lsp.config("ruff", {
@@ -87,7 +86,7 @@ vim.lsp.config("ruff", {
 			},
 		},
 	},
-	capabilities = capabilities,
+	-- capabilities = capabilities,
 })
 
 -- vim.lsp.config("ty", {
@@ -152,19 +151,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-require("tiny-inline-diagnostic").setup({
-	preset = "simple",
-	options = {
-		multilines = {
-			enabled = true,
-		},
-	},
-})
-
-vim.cmd("hi SignColumn guibg=None")
-
 vim.diagnostic.config({
-	-- enable signs and customize their text per severity
 	signs = {
 		text = {
 			-- [vim.diagnostic.severity.ERROR] = "E",
@@ -177,11 +164,11 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "●",
 		},
 	},
-	virtual_text = false, -- needed for tiny-inline-diagnostic
+	virtual_text = false,
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },
 	virtual_lines = false,
-	underline = false,
+	underline = true,
 	severity_sort = true,
 })
