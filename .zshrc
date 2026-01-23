@@ -10,7 +10,18 @@ if [ -d "/opt/homebrew/bin" ]; then
 	path+=("/opt/homebrew/bin")
 fi
 
+# Source manjaro-zsh-configuration
+if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
+  source /usr/share/zsh/manjaro-zsh-config
+fi
+
+# Use manjaro zsh prompt
+# if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#   source /usr/share/zsh/manjaro-zsh-prompt
+# fi
+
 path+=("$HOME/.juliaup/bin")
+path+=("$HOME/.cargo/bin")
 path+=("$HOME/.venv/formatter/bin")
 path+=("$HOME/.local/bin")
 path+=("$HOME/.venv/general/bin/")
@@ -41,7 +52,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias pip='uv pip'
 alias pytest="pytest -v"
 alias tmux="tmux -2"
 
@@ -57,33 +67,12 @@ if command -v zoxide >/dev/null 2>&1; then
 	alias cd=z
 fi
 
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
-
 eval "$(starship init zsh)"
-source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-
-# BEGIN opam configuration
-# This is useful if you're using opam as it adds:
-#   - the correct directories to the PATH
-#   - auto-completion for the opam binary
-# This section can be safely removed at any time if needed.
-[[ ! -r '/home/pradhan/.opam/opam-init/init.zsh' ]] || source '/home/pradhan/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
-# END opam configuration
-#
 export HISTFILE="$HOME/.zsh_history"
-export HISTSIZE=1000000000
-export SAVEHIST=1000000000
+export HISTSIZE=10000
+export SAVEHIST=10000
 setopt EXTENDED_HISTORY
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
