@@ -24,7 +24,7 @@ vim.opt.winborder = "rounded"
 vim.opt.completeopt = { "noselect" }
 vim.opt.shortmess:append("sI")
 vim.cmd("set path+=src/**")
-vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
+vim.api.nvim_set_option_value("clipboard", "unnamed,unnamedplus", {})
 
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0

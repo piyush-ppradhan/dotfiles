@@ -67,8 +67,6 @@ if command -v zoxide >/dev/null 2>&1; then
 	alias cd=z
 fi
 
-eval "$(starship init zsh)"
-
 export HISTFILE="$HOME/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000

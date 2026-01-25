@@ -1,10 +1,10 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
+	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
 })
 
 vim.lsp.config("julials", {
-	julia_env_path = "~/.julia/environments/v1.11",
+	julia_env_path = "/home/pradhan/.julia/environments/v1.14",
 })
 
 vim.lsp.config("lua_ls", {
@@ -39,9 +39,10 @@ vim.lsp.config("ruff", {
 	},
 })
 
-vim.lsp.config("ty", {})
-vim.lsp.enable({ "clangd", "julials", "lua_ls", "ruff", "ty" })
--- vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
+-- vim.lsp.config("ty", {})
+vim.lsp.config("pyright", {})
+
+vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("my.lsp", { clear = true }),
