@@ -70,6 +70,5 @@
         "editor.semanticHighlighting.enabled": false,
         "editor.defaultFormatter": "charliermarsh.ruff",
     },
-    "window.customTitleBarVisibility": "auto",
-    "workbench.colorTheme": "Default Light Modern",
+    "window.customTitleBarVisibility": "auto"
 }

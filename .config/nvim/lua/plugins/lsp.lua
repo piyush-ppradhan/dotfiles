@@ -1,13 +1,43 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/Saghen/blink.cmp", build = "cargo build --release" },
 	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
 })
 
+require("blink.cmp").setup({
+	keymap = {
+		preset = "default",
+		["<Up>"] = { "select_prev", "fallback" },
+		["<Down>"] = { "select_next", "fallback" },
+		["<C-p>"] = { "select_prev" },
+		["<C-n>"] = { "select_next" },
+		["<C-y>"] = { "accept" },
+	},
+	completion = {
+		menu = {
+			border = "rounded",
+		},
+		documentation = {
+			auto_show = true,
+		},
+	},
+	sources = {
+		default = { "lsp", "path", "buffer" },
+	},
+	fuzzy = {
+		implementation = "lua",
+		-- prebuilt_binaries = { force_version = "1.*" },
+	},
+})
+local capabilities = require("blink.cmp").get_lsp_capabilities()
+
 vim.lsp.config("julials", {
 	julia_env_path = "/home/pradhan/.julia/environments/v1.14",
+	capabilities = capabilities,
 })
 
 vim.lsp.config("lua_ls", {
+	capabilities = capabilities,
 	settings = {
 		Lua = {
 			runtime = {
@@ -30,6 +60,7 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.config("ruff", {
+	capabilities = capabilities,
 	init_options = {
 		settings = {
 			lint = {
@@ -40,7 +71,7 @@ vim.lsp.config("ruff", {
 })
 
 -- vim.lsp.config("ty", {})
-vim.lsp.config("pyright", {})
+vim.lsp.config("pyright", { capabilities = capabilities })
 
 vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
 
@@ -75,27 +106,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		map("n", "]d", function()
 			vim.diagnostic.goto_next({ float = true })
 		end)
-
-		-- Completion: trigger after 3+ letters, show menu without auto-insert
-		if client and client:supports_method("textDocument/completion") then
-			vim.opt_local.completeopt = { "menu", "menuone", "noselect" }
-			vim.lsp.completion.enable(true, client.id, buf, { autotrigger = false })
-
-			vim.api.nvim_create_autocmd("TextChangedI", {
-				buffer = buf,
-				callback = function()
-					local line = vim.api.nvim_get_current_line()
-					local col = vim.api.nvim_win_get_cursor(0)[2]
-					local before_cursor = line:sub(1, col)
-					-- Match 3+ letters/underscores (no numbers trigger)
-					local word = before_cursor:match("[%a_]+$")
-					if word and #word >= 3 then
-						local keys = vim.api.nvim_replace_termcodes("<C-x><C-o>", true, false, true)
-						vim.api.nvim_feedkeys(keys, "n", false)
-					end
-				end,
-			})
-		end
 	end,
 })
 

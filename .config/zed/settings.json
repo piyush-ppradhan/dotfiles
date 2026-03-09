@@ -1,22 +1,29 @@
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 15.5,
+  "buffer_font_size": 14.8,
   "scrollbar": {
+    "cursors": false,
     "diagnostics": "none",
-    "show": "never",
+    "git_diff": false,
+    "search_results": false,
+    "selected_text": false,
+    "selected_symbol": false
   },
+  "disable_ai":true,
   "buffer_line_height": "standard",
   "current_line_highlight": "none",
   "git": {
     "git_gutter": "hide",
     "inline_blame": { "enabled": false },
   },
-  "diagnostics": {
-    "inline": { "enabled": true },
-  },
-  // "agent": {
-  //   "button": false,
+  // "diagnostics": {
+  //   "inline": { "enabled": true },
   // },
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_user_picture": false,
+    "show_sign_in": false
+  },
   "collaboration_panel": {
     "button": false,
   },
@@ -29,12 +36,14 @@
   "gutter": {
     "line_numbers": false,
     "folds": false,
+    "runnables": false,
+    "breakpoints": false
   },
   "indent_guides": {
     "enabled": false,
   },
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "Fragment Mono",
+  "ui_font_family": "Fragment Mono",
   "toolbar": {
     "breadcrumbs": false,
     "agent_review": false,
@@ -42,10 +51,36 @@
     "quick_actions": false,
     "selections_menu": false,
   },
+  "format_on_save": "off",
   "languages": {
-    "Python": {
-      "language_servers": ["!basedpyright", "pyright", "ruff"],
+      "Python": {
+        "language_servers": ["!basedpyright", "pyright", "ruff"],
+        "format_on_save": "on",
+        "formatter": {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
     },
+    "C": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "clang-format",
+          "arguments": ["--style=file", "--assume-filename={buffer_path}"]
+        }
+      }
+    },
+    "C++": {
+      "format_on_save": "on",
+      "language_servers": ["clangd"],
+      "formatter": {
+        "external": {
+          "command": "clang-format",
+          "arguments": ["--style=file", "--assume-filename={buffer_path}"]
+        }
+      }
+    }
   },
   "vim_mode": true,
   "telemetry": {

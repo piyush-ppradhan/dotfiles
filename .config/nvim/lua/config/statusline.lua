@@ -14,10 +14,10 @@ function _G.git_branch()
 end
 
 vim.o.statusline = table.concat({
-	"%p%%", -- percentage
+	-- "%p%%", -- percentage
 	" L%l", -- line:col
 	"  git: %{v:lua.git_branch()}", -- Git branch
-	"  %y", -- filetype
+	-- "  %y", -- filetype
 	"  %f", -- file name
 	" %m", -- modified flag
 	" %r", -- readonly flag
