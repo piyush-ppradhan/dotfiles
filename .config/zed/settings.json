@@ -1,6 +1,6 @@
 {
-  "ui_font_size": 15.5,
-  "buffer_font_size": 14.8,
+  "ui_font_size": 17,
+  "buffer_font_size": 17.5,
   "scrollbar": {
     "cursors": false,
     "diagnostics": "none",
@@ -42,8 +42,8 @@
   "indent_guides": {
     "enabled": false,
   },
-  "buffer_font_family": "Fragment Mono",
-  "ui_font_family": "Fragment Mono",
+  "buffer_font_family": "Consolas Nerd Font Mono",
+  "ui_font_family": "Consolas Nerd Font Mono",
   "toolbar": {
     "breadcrumbs": false,
     "agent_review": false,

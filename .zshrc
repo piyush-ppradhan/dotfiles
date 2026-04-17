@@ -72,6 +72,7 @@ fi
 export HISTFILE="$HOME/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000
+export MOZ_ENABLE_WAYLAND=1
 setopt EXTENDED_HISTORY
 
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"

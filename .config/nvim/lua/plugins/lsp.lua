@@ -1,7 +1,7 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/Saghen/blink.cmp", build = "cargo build --release" },
-	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
+	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
 })
 
 require("blink.cmp").setup({
@@ -32,7 +32,7 @@ require("blink.cmp").setup({
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 vim.lsp.config("julials", {
-	julia_env_path = "/home/pradhan/.julia/environments/v1.14",
+	julia_env_path = "/home/pradhan/.julia/environments/nvim-lspconfig",
 	capabilities = capabilities,
 })
 

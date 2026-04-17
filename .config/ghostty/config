@@ -1,13 +1,29 @@
 background = #050505
-# adjust-cell-height = 0
-# font-family = "ComicCode Ligatures"
-# font-size = 11
-# adjust-cell-height = 0
-# font-size = 11.5
 adjust-cell-height = 0
-font-size = 11.6
-font-family = "Maple Mono"
-theme = Gruvbox Dark Hard
+font-size = 11.3
+#theme = Gruvbox Dark Hard
+#theme = Zenburn
 window-padding-balance = true
 window-padding-x = 0
 window-padding-y = 0
+foreground = #eadccc
+
+# Standard colors
+palette = 0=#0f0f0f
+palette = 1=#e25d6c
+palette = 2=#cea37f
+palette = 3=#f4bb54
+palette = 4=#e2be8a
+palette = 5=#ede4c8
+palette = 6=#e8ab3b
+palette = 7=#e6caab
+
+# Bright colors
+palette = 8=#706a6a
+palette = 9=#e9838f
+palette = 10=#cea37f
+palette = 11=#edb95a
+palette = 12=#eacea7
+palette = 13=#ede4c8
+palette = 14=#ecb95c
+palette = 15=#eadccc
