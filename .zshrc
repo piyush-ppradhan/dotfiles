@@ -49,7 +49,7 @@ if [ -d "$HOME/Tools/paraview/bin" ]; then
 	alias paraview="$HOME/Tools/paraview/bin/paraview"
 fi
 
-alias ls="ls --color=auto"
+alias ls="eza"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'

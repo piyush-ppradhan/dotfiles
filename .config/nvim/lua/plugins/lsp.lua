@@ -1,35 +1,50 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/Saghen/blink.cmp", build = "cargo build --release" },
 	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
+
+	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
+	{ src = "https://github.com/hrsh7th/cmp-buffer" },
+	{ src = "https://github.com/hrsh7th/cmp-path" },
+	{ src = "https://github.com/hrsh7th/nvim-cmp" },
 })
 
-require("blink.cmp").setup({
-	keymap = {
-		preset = "default",
-		["<Up>"] = { "select_prev", "fallback" },
-		["<Down>"] = { "select_next", "fallback" },
-		["<C-p>"] = { "select_prev" },
-		["<C-n>"] = { "select_next" },
-		["<C-y>"] = { "accept" },
+local cmp = require("cmp")
+cmp.setup({
+	snippet = {
+		expand = function(args)
+			vim.snippet.expand(args.body)
+		end,
 	},
-	completion = {
-		menu = {
-			border = "rounded",
-		},
-		documentation = {
-			auto_show = true,
-		},
+	mapping = {
+		["<Up>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_prev_item()
+			else
+				fallback()
+			end
+		end, { "i", "c" }),
+		["<Down>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_next_item()
+			else
+				fallback()
+			end
+		end, { "i", "c" }),
+		["<C-p>"] = cmp.mapping.select_prev_item(),
+		["<C-n>"] = cmp.mapping.select_next_item(),
+		["<C-y>"] = cmp.mapping.confirm({ select = false }),
 	},
-	sources = {
-		default = { "lsp", "path", "buffer" },
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
 	},
-	fuzzy = {
-		implementation = "lua",
-		-- prebuilt_binaries = { force_version = "1.*" },
-	},
+	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		{ name = "path" },
+		{ name = "buffer" },
+	}),
 })
-local capabilities = require("blink.cmp").get_lsp_capabilities()
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 vim.lsp.config("julials", {
 	julia_env_path = "/home/pradhan/.julia/environments/nvim-lspconfig",
@@ -122,7 +137,7 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "●",
 		},
 	},
-	virtual_text = false,
+	virtual_text = true,
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },
