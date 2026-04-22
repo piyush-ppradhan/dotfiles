@@ -1,6 +1,18 @@
 {
-  "ui_font_size": 17,
-  "buffer_font_size": 17.5,
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "scrollbar": {
     "cursors": false,
     "diagnostics": "none",
@@ -25,6 +37,7 @@
     "show_sign_in": false
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
   "inline_code_actions": false,
@@ -42,8 +55,13 @@
   "indent_guides": {
     "enabled": false,
   },
-  "buffer_font_family": "Consolas Nerd Font Mono",
-  "ui_font_family": "Consolas Nerd Font Mono",
+  "ui_font_family": "Inconsolata Nerd Font Mono",
+  "buffer_font_family": "Inconsolata Nerd Font Mono",
+  "ui_font_size": 17.5,
+  "buffer_font_size": 17.3,
+  "tab_bar": {
+    "show": false
+  },
   "toolbar": {
     "breadcrumbs": false,
     "agent_review": false,

@@ -1,6 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/JuliaEditorSupport/julia-vim" },
+	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
 
 	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
 	{ src = "https://github.com/hrsh7th/cmp-buffer" },
@@ -44,6 +44,7 @@ cmp.setup({
 		{ name = "buffer" },
 	}),
 })
+
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 vim.lsp.config("julials", {
@@ -85,10 +86,14 @@ vim.lsp.config("ruff", {
 	},
 })
 
--- vim.lsp.config("ty", {})
 vim.lsp.config("pyright", { capabilities = capabilities })
-
 vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
+
+-- local ty_capabilities = vim.deepcopy(capabilities)
+-- -- Ty sends verbose completion label details that nvim-cmp renders in the menu column.
+-- ty_capabilities.textDocument.completion.completionItem.labelDetailsSupport = false
+-- vim.lsp.config("ty", { capabilities = ty_capabilities })
+-- vim.lsp.enable({ "clangd", "julials", "lua_ls", "ruff", "ty" })
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("my.lsp", { clear = true }),
@@ -137,7 +142,7 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "●",
 		},
 	},
-	virtual_text = true,
+	virtual_text = false,
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },

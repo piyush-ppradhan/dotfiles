@@ -4,7 +4,13 @@ vim.pack.add({
 
 local actions = require("fzf-lua").actions
 require("fzf-lua").setup({
-	files = { previewer = false },
+	files = {
+		previewer = false,
+		file_ignore_patterns = { "%.xdmf$", "%.hdf5$" },
+	},
+	git = {
+		files = { file_ignore_patterns = { "%.xdmf$", "%.hdf5$" } },
+	},
 	actions = {
 		files = {
 			["default"] = actions.file_edit,
