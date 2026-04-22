@@ -37,7 +37,6 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 #zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
 setopt PROMPT_SUBST
-# PROMPT='%~%f${vcs_info_msg_0_}%f $ '
 PROMPT='%F{#abb826}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f 󰘧 '
 export VIRTUAL_ENV_DISABLE_PROMPT=
 

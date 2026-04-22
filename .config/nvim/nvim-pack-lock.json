@@ -17,7 +17,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "fzf-lua": {
-      "rev": "7b3a7390d01db93d422a4d6d6cf3771038577858",
+      "rev": "8223eb24a7adf72c4b24e04b751486b492775414",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "nvim-cmp": {

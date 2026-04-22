@@ -69,18 +69,6 @@ function _G.mode_label()
 	return modes[vim.fn.mode()] or vim.fn.mode()
 end
 
--- vim.o.statusline = table.concat({
--- 	-- "%p%%", -- percentage
--- 	" %{v:lua.mode_label()} L%l", -- mode and line
--- 	"%{v:lua.git_branch_segment()}", -- Git branch
--- 	-- "  %y", -- filetype
--- 	"  %f", -- file name
--- 	" %m", -- modified flag
--- 	" %r", -- readonly flag
--- 	" %h", -- help flag
--- 	" %w", -- preview flag
--- })
-
 vim.o.statusline = table.concat({
 	-- "%p%%", -- percentage
 	" %{v:lua.mode_label()} L%l", -- mode and line
