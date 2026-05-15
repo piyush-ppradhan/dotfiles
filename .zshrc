@@ -48,11 +48,6 @@ if [ -d "$HOME/Tools/paraview/bin" ]; then
 	alias paraview="$HOME/Tools/paraview/bin/paraview"
 fi
 
-alias ls="eza"
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 alias pytest="pytest -v"
 alias tmux="tmux -2"
 
@@ -62,6 +57,11 @@ alias general='source ~/.venv/general/bin/activate'
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza --color=always --icons=always"
 fi
+alias ls="eza"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 
 if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init zsh)"

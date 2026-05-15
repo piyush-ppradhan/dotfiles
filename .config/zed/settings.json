@@ -2,38 +2,51 @@
   "agent_servers": {
     "codex-acp": {
       "type": "registry"
-    },
-    "claude-acp": {
-      "type": "registry"
     }
   },
-  "agent": {
-    "dock": "left",
-    "favorite_models": [],
-    "model_parameters": []
+  "debugger": {
+    "dock": "left"
+  },
+  "cli_default_open_behavior": "new_window",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
   },
   "diagnostics": {
     "button": false,
     "include_warnings": false,
   },
-
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false
+  },
+  "scroll_beyond_last_line": "off",
   "theme": {
     "mode": "dark",
-    "light": "One Light",
+    "light": "Gruvbox Dark Hard",
     "dark": "Gruvbox Dark Hard",
   },
-  "icon_theme": {
-    "mode": "light",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+  "theme_overrides": {
+    "Gruvbox Dark Hard": {
+      "editor.background": "#131313",
+      "editor.gutter.background": "#131313",
+      "panel.background": "#202020",
+      "status_bar.background": "#202020",
+      "tab_bar.background": "#131313",
+      "tab.active_background": "#202020",
+      "tab.inactive_background": "#131313",
+      "terminal.background": "#131313",
+      "title_bar.background": "#202020",
+      "border": "#101010"
+    }
   },
-  "ui_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 16,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 14.5,
-  "agent_buffer_font_size": 14.5,
+  "ui_font_family": ".ZedMono",
+  "buffer_font_size": 15,
+  "buffer_font_family": ".ZedMono",
+  "buffer_line_height": "standard",
 
-  "buffer_line_height": "comfortable",
   "current_line_highlight": "none",
   "format_on_save": "off",
   "inline_code_actions": false,
@@ -43,7 +56,7 @@
     "line_numbers": false,
     "folds": false,
     "runnables": false,
-    "breakpoints": false
+    "bookmarks": false
   },
   "indent_guides": {
     "enabled": false,
@@ -84,17 +97,12 @@
     "dock": "left",
     "button": false,
   },
-  // "agent": {
-  //   "dock": "right",
-  //   "favorite_models": [],
-  //   "model_parameters": []
-  // },
+  "disable_ai": true,
 
   "git": {
     "git_gutter": "hide",
     "inline_blame": { "enabled": false },
   },
-  //"disable_ai": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
