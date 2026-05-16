@@ -147,6 +147,6 @@ vim.diagnostic.config({
 	-- 	current_line = false,
 	-- },
 	virtual_lines = false,
-	underline = true,
+	underline = false,
 	severity_sort = true,
 })
