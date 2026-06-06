@@ -42,9 +42,9 @@
     }
   },
   "ui_font_size": 16,
-  "ui_font_family": ".ZedMono",
-  "buffer_font_size": 16,
-  "buffer_font_family": ".ZedMono",
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 15,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_line_height": "standard",
 
   "current_line_highlight": "none",

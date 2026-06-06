@@ -10,15 +10,7 @@ if [ -d "/opt/homebrew/bin" ]; then
 	path+=("/opt/homebrew/bin")
 fi
 
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-
-# Use manjaro zsh prompt
-# if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-#   source /usr/share/zsh/manjaro-zsh-prompt
-# fi
+source ~/.local/share/omarchy/default/bash/aliases
 
 path+=("$HOME/.juliaup/bin")
 path+=("$HOME/.cargo/bin")
@@ -37,7 +29,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 #zstyle ':vcs_info:git:*' formats ' : %F{red}%b%f'
 setopt PROMPT_SUBST
-PROMPT='%F{#abb826}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f 󰘧 '
+PROMPT='%F{#acf430}%B%~%b%f%F{#e6b823}${vcs_info_msg_0_}%f 󰘧 '
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
 if [ -d "/opt/homebrew/bin" ]; then

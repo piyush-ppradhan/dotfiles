@@ -1,51 +1,57 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
+	{ src = "https://github.com/neocmakelsp/neocmakelsp" },
 
-	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
-	{ src = "https://github.com/hrsh7th/cmp-buffer" },
-	{ src = "https://github.com/hrsh7th/cmp-path" },
-	{ src = "https://github.com/hrsh7th/nvim-cmp" },
+	{ src = "https://github.com/saghen/blink.lib" },
+	{ src = "https://github.com/saghen/blink.cmp" },
 })
 
-local cmp = require("cmp")
-cmp.setup({
-	snippet = {
-		expand = function(args)
-			vim.snippet.expand(args.body)
-		end,
-	},
-	mapping = {
-		["<Up>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-				cmp.select_prev_item()
-			else
-				fallback()
-			end
-		end, { "i", "c" }),
-		["<Down>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-				cmp.select_next_item()
-			else
-				fallback()
-			end
-		end, { "i", "c" }),
-		["<C-p>"] = cmp.mapping.select_prev_item(),
-		["<C-n>"] = cmp.mapping.select_next_item(),
-		["<C-y>"] = cmp.mapping.confirm({ select = false }),
-	},
-	window = {
-		completion = cmp.config.window.bordered(),
-		documentation = cmp.config.window.bordered(),
-	},
-	sources = cmp.config.sources({
-		{ name = "nvim_lsp" },
-		{ name = "path" },
-		{ name = "buffer" },
-	}),
+local blink_cmp = require("blink.cmp")
+blink_cmp.build():pwait()
+
+vim.api.nvim_create_autocmd("PackChanged", {
+	pattern = "blink.cmp",
+	desc = "Run :BlinkCmp build after blink.cmp updates",
+	callback = function(e)
+		if e.data.kind == "install" or e.data.kind == "update" then
+			vim.cmd.packadd({ args = { e.data.spec.name }, bang = false })
+			require("blink.cmp.fuzzy.build").build()
+		end
+	end,
 })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+blink_cmp.setup({
+	keymap = {
+		preset = "none",
+		["<Up>"] = { "select_prev", "fallback" },
+		["<Down>"] = { "select_next", "fallback" },
+		["<C-p>"] = { "select_prev", "fallback" },
+		["<C-n>"] = { "select_next", "fallback" },
+		["<C-y>"] = { "accept", "fallback" },
+	},
+	completion = {
+		list = {
+			selection = {
+				preselect = false,
+				auto_insert = false,
+			},
+		},
+		menu = {
+			border = "rounded",
+		},
+		documentation = {
+			window = {
+				border = "rounded",
+			},
+		},
+	},
+	sources = {
+		default = { "lsp", "path", "buffer" },
+	},
+})
+
+local capabilities = blink_cmp.get_lsp_capabilities()
 
 vim.lsp.config("julials", {
 	julia_env_path = "/home/pradhan/.julia/environments/nvim-lspconfig",
@@ -87,7 +93,8 @@ vim.lsp.config("ruff", {
 })
 
 vim.lsp.config("pyright", { capabilities = capabilities })
-vim.lsp.enable({ "clangd", "julials", "lua_ls", "pyright", "ruff" })
+vim.lsp.config("neocmake", { capabilities = capabilities })
+vim.lsp.enable({ "clangd", "julials", "lua_ls", "neocmake", "pyright", "ruff" })
 
 -- local ty_capabilities = vim.deepcopy(capabilities)
 -- -- Ty sends verbose completion label details that nvim-cmp renders in the menu column.
@@ -142,7 +149,7 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "●",
 		},
 	},
-	virtual_text = false,
+	virtual_text = true,
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },
