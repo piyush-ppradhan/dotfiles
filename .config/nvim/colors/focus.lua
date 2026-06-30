@@ -8,7 +8,7 @@ end
 vim.g.colors_name = "focus"
 
 local c = {
-	background1 = "#10191F",
+	background1 = "#10151F", -- "#10191F"
 	background2 = "#18262F",
 	background3 = "#1A2831",
 	background4 = "#21333F",
@@ -36,6 +36,7 @@ local c = {
 	code_raw_string = "#D4BC7D",
 	code_char_literal = "#D4BC7D",
 	code_identifier = "#BFC9DB",
+	-- code_identifier = "#D699B5",
 	code_note = "#E0AD82",
 	code_number = "#D699B5",
 	code_error = "#FF0000",
@@ -105,9 +106,12 @@ hl("CurSearch", { fg = c.char_under_cursor, bg = c.search_result_active })
 hl("Substitute", { fg = c.background1, bg = c.code_highlight })
 hl("MatchParen", { fg = c.bracket_highlight, bg = c.selection_active, bold = true })
 
-hl("Pmenu", { fg = c.ui_default, bg = c.background3 })
+hl("Pmenu", { fg = c.ui_default, bg = c.background4 })
 hl("PmenuSel", { fg = c.char_under_cursor, bg = c.selection_active })
-hl("PmenuSbar", { bg = c.background2 })
+hl("PmenuBorder", { fg = c.active_pane_border, bg = c.background4 })
+hl("PmenuMatch", { fg = c.code_function, bg = c.background4, bold = true })
+hl("PmenuMatchSel", { fg = c.char_under_cursor, bg = c.selection_active, bold = true })
+hl("PmenuSbar", { bg = c.background3 })
 hl("PmenuThumb", { bg = c.scrollbar })
 hl("WildMenu", { fg = c.char_under_cursor, bg = c.selection_active })
 hl("Question", { fg = c.code_note })
@@ -169,6 +173,7 @@ hl("Todo", { fg = c.code_comment_highlight3, bg = c.background2, bold = true })
 
 hl("@variable", { fg = c.code_identifier })
 hl("@variable.builtin", { fg = c.code_builtin_variable })
+hl("pythonClassVar", { link = "@variable.builtin" })
 hl("@variable.parameter", { fg = c.code_identifier })
 hl("@variable.member", { fg = c.code_identifier })
 hl("@constant", { fg = c.code_value })

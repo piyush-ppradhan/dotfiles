@@ -21,6 +21,7 @@ path+=("$HOME/Tools/go/bin")
 path+=("$HOME/.local/share/bob/nightly/bin")
 path+=("$HOME/.bun/bin")
 path+=("$HOME/matlab/R2025b/bin/glnxa64")
+path+=("$HOME/Tools/Odin/")
 
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/applications"
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pkgconfig"

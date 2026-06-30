@@ -1,7 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	-- { src = "https://github.com/JuliaEditorSupport/julia-vim" },
-	{ src = "https://github.com/neocmakelsp/neocmakelsp" },
 
 	{ src = "https://github.com/saghen/blink.lib" },
 	{ src = "https://github.com/saghen/blink.cmp" },
@@ -51,7 +50,8 @@ blink_cmp.setup({
 	},
 })
 
-local capabilities = blink_cmp.get_lsp_capabilities()
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = blink_cmp.get_lsp_capabilities(capabilities)
 
 vim.lsp.config("julials", {
 	julia_env_path = "/home/pradhan/.julia/environments/nvim-lspconfig",
@@ -93,14 +93,8 @@ vim.lsp.config("ruff", {
 })
 
 vim.lsp.config("pyright", { capabilities = capabilities })
-vim.lsp.config("neocmake", { capabilities = capabilities })
-vim.lsp.enable({ "clangd", "julials", "lua_ls", "neocmake", "pyright", "ruff" })
-
--- local ty_capabilities = vim.deepcopy(capabilities)
--- -- Ty sends verbose completion label details that nvim-cmp renders in the menu column.
--- ty_capabilities.textDocument.completion.completionItem.labelDetailsSupport = false
--- vim.lsp.config("ty", { capabilities = ty_capabilities })
--- vim.lsp.enable({ "clangd", "julials", "lua_ls", "ruff", "ty" })
+vim.lsp.config("ols", { capabilities = capabilities })
+vim.lsp.enable({ "clangd", "julials", "lua_ls", "ols", "pyright", "ruff" })
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("my.lsp", { clear = true }),
@@ -109,6 +103,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		if client then
 			client.server_capabilities.semanticTokensProvider = nil
+
+			if client:supports_method("textDocument/completion") then
+				client.server_capabilities.completionProvider.triggerCharacters = completion_trigger_chars
+				vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+			end
 		end
 
 		local buf = ev.buf
@@ -124,14 +123,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		map("n", "K", vim.lsp.buf.hover)
 		map("n", "<leader>rn", vim.lsp.buf.rename)
 		map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action)
+		map("i", "<C-Space>", vim.lsp.completion.get)
 
 		-- Diagnostics
 		map("n", "<leader>vd", vim.diagnostic.open_float)
 		map("n", "[d", function()
-			vim.diagnostic.goto_prev({ float = true })
+			vim.diagnostic.jump({ count = -1, float = true })
 		end)
 		map("n", "]d", function()
-			vim.diagnostic.goto_next({ float = true })
+			vim.diagnostic.jump({ count = 1, float = true })
 		end)
 	end,
 })
@@ -139,17 +139,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.diagnostic.config({
 	signs = {
 		text = {
-			-- [vim.diagnostic.severity.ERROR] = "E",
-			-- [vim.diagnostic.severity.WARN] = "W",
-			-- [vim.diagnostic.severity.HINT] = "H",
-			-- [vim.diagnostic.severity.INFO] = "I",
-			[vim.diagnostic.severity.ERROR] = "●",
-			[vim.diagnostic.severity.WARN] = "●",
-			[vim.diagnostic.severity.HINT] = "●",
-			[vim.diagnostic.severity.INFO] = "●",
+			[vim.diagnostic.severity.ERROR] = "E",
+			[vim.diagnostic.severity.WARN] = "W",
+			[vim.diagnostic.severity.HINT] = "H",
+			[vim.diagnostic.severity.INFO] = "I",
 		},
 	},
-	virtual_text = true,
+	virtual_text = {
+		current_line = true,
+	},
 	-- virtual_lines = {
 	-- 	current_line = false,
 	-- },

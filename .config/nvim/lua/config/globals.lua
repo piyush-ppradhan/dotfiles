@@ -1,3 +1,6 @@
+require("vim._core.ui2")
+require("vim._core.ui2.cmdline")
+require("vim._core.ui2.messages")
 vim.loader.enable()
 vim.g.mapleader = " "
 vim.opt.guicursor = ""
@@ -5,7 +8,7 @@ vim.opt.termguicolors = true
 -- vim.opt.nu = true
 -- vim.opt.relativenumber = true
 -- vim.opt.cursorline = true
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "no"
 vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -29,3 +32,5 @@ vim.api.nvim_set_option_value("clipboard", "unnamed,unnamedplus", {})
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
+
+vim.cmd.colorscheme("focus")

@@ -9,6 +9,7 @@ require("conform").setup({
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		julia = { "runic" },
+		odin = { "odinfmt" },
 		rust = { "rustfmt" },
 	},
 	formatters = {
