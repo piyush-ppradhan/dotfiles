@@ -10,7 +10,9 @@ if [ -d "/opt/homebrew/bin" ]; then
 	path+=("/opt/homebrew/bin")
 fi
 
-source ~/.local/share/omarchy/default/bash/aliases
+if [ -d "~/.local/share/omarchy" ]; then
+	source ~/.local/share/omarchy/default/bash/aliases
+fi
 
 path+=("$HOME/.juliaup/bin")
 path+=("$HOME/.cargo/bin")
